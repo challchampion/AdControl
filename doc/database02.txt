@@ -1,0 +1,214 @@
+注意：
+	1. 此文档为database的设计文档，若修改此文档请注意与sql文件进行同步更新
+	2. 此文档所有表当前使用的存储引擎均为MyISAM, 后面根据具体情况，部分表可更改为InnoDB
+	3. 所有表均未为其他字段建立索引，只有主键，后续改进
+	4. mysql的参数设置这里未提及，在项目进行到一定时期再进行此工作
+	5. php中操作sql的建议会后续补充
+
+
+1. 用户管理 ：用户增删改查 用户组增删改查 用户状态管理
+create table user (
+	userid int unsigned not null auto_increment primary key,
+	username char(20) not null,
+	passwd char(40) not null,
+	email char(100),
+	userstatus enum('online', 'offline') not null,
+	usergroupid int unsigned not null,
+	authority enum('province', 'country') not null
+);
+
+create table usergroup (
+	usergroupid int unsigned not null primary key,
+	usergroupname char(20) not null,
+	group_authority enum('province', 'country') not null
+);
+
+注意事项：
+用户权限问题，不同用户管理权限异同，后续可能要增加表示城市区域字段（或其它措施，须参考现在的办法），以做好用户权限管理
+userstatus 具体有哪几种？
+authority 具体有哪几种？
+
+2. 终端管理
+create table terminal (
+	terminalid int unsigned not null auto_increment primary key,
+	terminal_name char(30) not null,
+	terminal_type char(20) not null,
+	ip char(20) not null,
+	mac char(30) not null,
+	volume tinyint not null,
+	terminal_status enum('online', 'offline') not null,
+	terminal_groupid int unsigned not null,
+	userid int unsigned not null
+);
+
+//此表从上面表中拆分出来，因为存储的是终端相对稳定，无须更改的信息，而且因为大量的text字段，故独立成表
+create table terminalinfo (
+	terminalid int unsigned not null auto_increment primary key,
+	hardwareinfo text,
+	softwareinfo text,
+	weatheraddress text,
+	remark text,
+	discinfo text,
+	addressinfo text,
+	displayportid int unsigned  not null,
+	resolutionid int unsigned not null,
+	aspectratioid int unsigned not null
+);
+
+create table terminalgroup (
+	terminal_groupid int unsigned not null primary key,
+	groupname char(20) not null
+);
+
+create table displayport (
+	displayportid int unsigned not null primary key,
+	name char(25) not null
+);
+
+insert into displayport values 
+	(1, 'hdmi'),
+	(2, 'lvds'),
+	(3, 'av'),
+	(4, 'vga'),
+	(5, 'component');
+
+create table resolution (
+	resolutionid int unsigned not null primary key,
+	name char(25) not null
+);
+
+insert into resolution values 
+	(1, 'hdmi1080p60'),
+	(2, 'hdmi720p60');
+
+create table aspectratio (
+	aspectratioid int unsigned not null primary key,
+	name char(25) not null
+);
+ 
+insert into aspectratio values 
+	(1, '16:9'),
+	(2, '4:3'),
+	(3, '16:10');
+	
+注意事项：
+	1. 根据实际需要，会添加更多字段，或做相应缩减
+	
+
+	
+3. 媒体 审核
+create table media (
+	mediaid int unsigned not null primary key,
+	categoryid tinyint unsigned not null,
+	mediapath char(80) not null,
+	mediastatus enum('verified', 'verifying', 'denied') not null,
+	mediasize int not null,
+	uploadtime datetime not null,
+	userid int unsigned not null
+);
+mediastatus  状态主要指审核状态，当前有 通过审核，审核中，驳回 三种情况
+
+//拆表原因同 终端 表
+create table mediainfo (
+	mediaid int unsigned not null primary key,
+	verifycomment text,
+	illustration text
+);
+verifycomment 审核意见
+illustration  媒体说明性文字
+
+create table mediacategory (
+	categoryid tinyint unsigned not null primary key,
+	name char(20) not null
+);
+
+4. 模板管理
+create table pattern (
+	patternid int unsigned not null primary key,
+	name char(30) not null,
+	categoryid int,
+	userid int unsigned not null,
+	resolutionid int unsigned not null,
+	aspectratioid int unsigend not null,
+	maketime datetime not null
+);
+模板的分类有必要做吗？此处暂保留categoryid字段，但并未建立相应的category表
+
+create table patternarea (
+	areaid int unsigned not null primary key,
+	areatype enum('video', 'text', 'date', 'week', 'picture', 'weather', 'time') not null,
+	patternid int unsigned not null,
+	width smallint unsigned not null,
+	height smallint unsigned not null,
+	layer tinyint unsigned not null,
+	xcoordinate tinyint not null,
+	ycoordinate tinyint not null,
+	transparency tinyint unsigned not null
+);
+模板中某个区域的表，区域类型暂只有这几种，都是预定义，如果需要更多或可动态添加，可将类型信息独立成表
+
+5. 节目单管理
+create table playlist (
+	playlistid int unsigned not null primary key,
+	name char(30) not null,
+	patternid int unsigned not null,
+	userid int unsigned not null
+);
+
+create table playlistitem (
+	itemid int unsigned not null primary key,
+	areaid int unsigned not null,
+	mediaid int unsigned not null,
+	playlistid int unsigned not null
+);
+
+playlist ----> pattern
+playlistitem ----> patternarea
+这里的依赖关系有可能会造成一致性错误，节目单依赖于某个模板，而模板的区域都是定义好的，所以节目单中的元素必须
+遵循相应模板中区域定义，不能超出，使用不符合此模板的区域。此处须检查判断。有没有更好的办法可避免这个问题？
+
+6. 播放计划
+create table playschedule (
+	playscheduleid int unsigned not null primary key,
+	name char(30) not null,
+	userid int unsigned,
+	scheduledate date not null,
+	starttime time not null,
+	endtime time not null,
+	scheduletypeid tinyint not null
+);
+
+create table playscheduleitem (
+	scheduleitemid int unsigned not null primary key,
+	playlistid int unsigned not null,
+	starttime time not null,
+	endtime time not null,
+	playtimes tinyint,
+	playscheduleid int unsigned not null
+);
+playtimes指播放次数
+
+create table scheduletype (
+	scheduletypeid tinyint not null primary key,
+	name char(20) not null
+);
+播放类型可包含 循环，插播，定时等
+
+注意事项：
+播放计划仅针对某一天
+播放计划由若干节目单组成，规定每个节目单的起止播放时间，播放次数(？起止播放时间与播放次数有冲突时，由终端处理)
+播放计划有起止时间，其中每一个节目单也具有起止时间，播放次数，当两者发生冲突时，须遵从播放计划的起止时间
+原则上下发的节目内容均应由此播放计划生成
+播放计划不包含终端信息，不与具体的终端结合在一起
+播放计划下发后相关信息将被从数据库中删除，只保留下发日志信息
+须知：下发的xml文件将不做保存，仅保留日志信息。
+	  xml文件对于不同发布类型来说，其生成过程有差别：
+		  快速发布时，选择模板，媒体文件，终端，时间，然后即刻生成xml文件
+		  标准发布时，
+			 选择节目单，终端，时间，然后生成xml文件
+			 选择播放计划，终端，然后生成xml
+			 推荐使用播放计划
+	  
+	  
+	  
+

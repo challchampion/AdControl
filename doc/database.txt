@@ -1,0 +1,194 @@
+1. 用户管理 ：用户增删改查 用户组增删改查 用户状态管理
+create table user (
+	userid int unsigned not null auto_increment primary key,
+	username char(20) not null,
+	passwd char(40) not null,
+	email char(100),
+	userstatus enum('online', 'offline') not null,
+	description text,
+	usergroupid int not null,
+	authority enum('province', 'country') not null
+);
+
+create table usergroup (
+	usergroupid int unsigned not null primary key,
+	usergroupname char(20) not null,
+	group_authority enum('province', 'country') not null
+);
+
+注意事项：
+用户权限问题，不同用户管理权限异同，后续可能要增加表示城市区域字段（或其它措施，须参考现在的办法），以做好用户权限管理
+text字段会导致表检索速度变慢，后续可能会考虑将此字段移出此表，单独放在某一处
+userstatus 具体有哪几种？
+authority 具体有哪几种？
+
+2. 终端管理
+create table terminal (
+	terminalid int unsigned not null auto_increment primary key,
+	terminal_name varchar(30) not null,
+	terminal_type char(20) not null,
+	ip char(20) not null,
+	mac char(30) not null,
+	hardwareinfo text,
+	softwareinfo text,
+	discinfo text,
+	addressinfo text,
+	weatheraddress text,
+	remark text,
+	volume tinyint not null,
+	terminal_status enum('online', 'offline') not null,
+	terminal_groupid int unsigned not null,
+	displayportid int unsigned  not null,
+	resolutionid int unsigned not null,
+	aspectratioid int unsigned not null
+);
+
+create table terminalgroup (
+	terminal_groupid int unsigned not null primary key,
+	groupname char(20) not null
+);
+
+create table displayport (
+	displayportid int unsigned not null primary key,
+	name char(25) not null
+);
+
+insert into displayport values 
+	(1, 'hdmi'),
+	(2, 'lvds'),
+	(3, 'av'),
+	(4, 'vga'),
+	(5, 'component');
+
+create table resolution (
+	resolutionid int unsigned not null primary key,
+	name char(25) not null
+);
+
+insert into resolution values 
+	(1, 'hdmi1080p60'),
+	(2, 'hdmi720p60');
+
+create table aspectratio (
+	aspectratioid int unsigned not null primary key,
+	name char(25) not null
+);
+ 
+insert into aspectratio values 
+	(1, '16:9'),
+	(2, '4:3'),
+	(3, '16:10');
+	
+注意事项：
+终端需要与某一用户对应吗，譬如由某一用户添加上的？
+text字段需要被移出独立成表
+	
+
+	
+3. 媒体 审核
+create table media (
+	mediaid int unsigned not null primary key,
+	categoryid tinyint unsigned not null,
+	mediapath varchar(50) not null,
+	mediastatus tinyint not null,
+	mediasize int not null,
+	uploadtime datetime not null,
+	userid int unsigned not null
+);
+
+create table mediainfo (
+	mediaid int unsigned not null primary key,
+	verifycomment text,
+	illustration text
+);
+
+create table mediacategory (
+	categoryid tinyint unsigned not null primary key,
+	name char(20) not null
+);
+
+4. 模板管理
+create table pattern (
+	patternid int unsigned not null primary key,
+	name char(20) not null,
+	categoryid int,
+	userid int unsigned not null,
+	resolutionid int unsigned not null,
+	aspectratioid int unsigend not null,
+	maketime datetime
+);
+
+create table patternarea (
+	areaid int unsigned not null primary key,
+	areatype enum('video', 'text', 'date', 'week', 'picture', 'weather', 'time') not null,
+	patternid int unsigned not null,
+	width smallint unsigned not null,
+	height smallint unsigned not null,
+	layer tinyint unsigned not null,
+	xcoordinate tinyint not null,
+	ycoordinate tinyint not null,
+	transparency tinyint unsigned not null
+);
+此处模板分类需注意
+
+5. 节目单管理
+create table playlist (
+	playlistid int unsigned not null primary key,
+	name char(30) not null,
+	patternid int unsigned not null,
+	userid int unsigned not null
+);
+
+create table playlistitem (
+	itemid int unsigned not null primary key,
+	areaid int unsigned not null,
+	mediaid int unsigned not null,
+	playlistid int unsigned not null
+);
+
+6. 播放计划
+create table playschedule (
+	playscheduleid int unsigned not null primary key,
+	name char(30) not null,
+	userid int unsigned,
+	scheduledate date not null,
+	starttime time not null,
+	endtime time not null,
+	scheduletypeid tinyint not null
+);
+
+create table playscheduleitem (
+	scheduleitemid int unsigned not null primary key,
+	playlistid int unsigned not null,
+	starttime time not null,
+	endtime time not null,
+	playtimes tinyint,
+	playscheduleid int unsigned not null
+);
+
+create table scheduletype (
+	scheduletypeid tinyint not null primary key,
+	name char(20) not null
+);
+注意事项：
+播放计划仅针对某一天
+播放计划由若干节目单组成，规定每个节目单的起止播放时间，播放次数(？起止播放时间与播放次数有冲突时，由终端处理)
+播放计划有起止时间，其中每一个节目单也具有起止时间，播放次数，当两者发生冲突时，须遵从播放计划的起止时间
+原则上下发的节目内容均应由此播放计划生成
+播放计划不包含终端信息，不与具体的终端结合在一起
+播放计划下发后相关信息将被从数据库中删除，只保留下发日志信息
+须知：下发的xml文件将不做保存，仅保留日志信息。
+	  xml文件对于不同发布类型来说，其生成过程有差别：
+		  快速发布时，选择模板，媒体文件，终端，时间，然后即刻生成xml文件
+		  标准发布时，
+			 选择节目单，终端，时间，然后生成xml文件
+			 选择播放计划，终端，然后生成xml
+			 推荐使用播放计划
+	  
+	  
+	  
+此文档为database的设计文档，若修改此文档请注意与sql文件进行同步更新
+
+
+
+	
