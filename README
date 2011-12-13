@@ -1,5 +1,4 @@
 lib/common            可以共享的一些库，譬如数据库抽象层
-lib/model             值对象类
 lib/dao               数据访问对象类，及对应的dao工厂函数
 lib/logic             业务逻辑类
 lib/base.inc.php      全局变量
