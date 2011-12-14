@@ -100,6 +100,22 @@ class UserMySqlDAO implements UserDAO{
 		$sqlQuery = new SqlQuery($sql);
 		return $this->executeUpdate($sqlQuery);
 	}
+	
+	public function exist($user){
+		$sql = 'SELECT * FROM user WHERE username = ? AND passwd = ?';
+		$sqlQuery = new SqlQuery($sql);
+		
+		$sqlQuery->set($user->username);
+		$sqlQuery->set($user->passwd);
+		
+		$rs = QueryExecutor::execute($sqlQuery);
+		
+		if(count($rs) === 0){
+			return false;
+		} else {
+			return true;
+		}
+	}
 
 	public function queryByUsername($value){
 		$sql = 'SELECT * FROM user WHERE username = ?';

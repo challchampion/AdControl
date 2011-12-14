@@ -5,3 +5,4 @@ lib/base.inc.php      全局变量
 lib/config.inc.php    配置
 
 /control              页面逻辑，需要在配置里提供路由映射表
+
