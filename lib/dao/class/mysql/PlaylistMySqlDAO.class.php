@@ -3,7 +3,7 @@
  * Class that operate on table 'playlist'. Database Mysql.
  *
  * @author: http://phpdao.com
- * @date: 2011-12-13 09:00
+ * @date: 2011-12-15 02:58
  */
 class PlaylistMySqlDAO implements PlaylistDAO{
 
@@ -57,12 +57,12 @@ class PlaylistMySqlDAO implements PlaylistDAO{
  	 * @param PlaylistMySql playlist
  	 */
 	public function insert($playlist){
-		$sql = 'INSERT INTO playlist (name, patternid, userid) VALUES (?, ?, ?)';
+		$sql = 'INSERT INTO playlist (name, patternid, username) VALUES (?, ?, ?)';
 		$sqlQuery = new SqlQuery($sql);
 		
 		$sqlQuery->set($playlist->name);
 		$sqlQuery->setNumber($playlist->patternid);
-		$sqlQuery->setNumber($playlist->userid);
+		$sqlQuery->set($playlist->username);
 
 		$id = $this->executeInsert($sqlQuery);	
 		$playlist->playlistid = $id;
@@ -75,12 +75,12 @@ class PlaylistMySqlDAO implements PlaylistDAO{
  	 * @param PlaylistMySql playlist
  	 */
 	public function update($playlist){
-		$sql = 'UPDATE playlist SET name = ?, patternid = ?, userid = ? WHERE playlistid = ?';
+		$sql = 'UPDATE playlist SET name = ?, patternid = ?, username = ? WHERE playlistid = ?';
 		$sqlQuery = new SqlQuery($sql);
 		
 		$sqlQuery->set($playlist->name);
 		$sqlQuery->setNumber($playlist->patternid);
-		$sqlQuery->setNumber($playlist->userid);
+		$sqlQuery->set($playlist->username);
 
 		$sqlQuery->setNumber($playlist->playlistid);
 		return $this->executeUpdate($sqlQuery);
@@ -109,10 +109,10 @@ class PlaylistMySqlDAO implements PlaylistDAO{
 		return $this->getList($sqlQuery);
 	}
 
-	public function queryByUserid($value){
-		$sql = 'SELECT * FROM playlist WHERE userid = ?';
+	public function queryByUsername($value){
+		$sql = 'SELECT * FROM playlist WHERE username = ?';
 		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->setNumber($value);
+		$sqlQuery->set($value);
 		return $this->getList($sqlQuery);
 	}
 
@@ -131,10 +131,10 @@ class PlaylistMySqlDAO implements PlaylistDAO{
 		return $this->executeUpdate($sqlQuery);
 	}
 
-	public function deleteByUserid($value){
-		$sql = 'DELETE FROM playlist WHERE userid = ?';
+	public function deleteByUsername($value){
+		$sql = 'DELETE FROM playlist WHERE username = ?';
 		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->setNumber($value);
+		$sqlQuery->set($value);
 		return $this->executeUpdate($sqlQuery);
 	}
 
@@ -151,7 +151,7 @@ class PlaylistMySqlDAO implements PlaylistDAO{
 		$playlist->playlistid = $row['playlistid'];
 		$playlist->name = $row['name'];
 		$playlist->patternid = $row['patternid'];
-		$playlist->userid = $row['userid'];
+		$playlist->username = $row['username'];
 
 		return $playlist;
 	}

@@ -3,7 +3,7 @@
  * Class that operate on table 'pattern'. Database Mysql.
  *
  * @author: http://phpdao.com
- * @date: 2011-12-13 09:00
+ * @date: 2011-12-15 02:58
  */
 class PatternMySqlDAO implements PatternDAO{
 
@@ -57,12 +57,12 @@ class PatternMySqlDAO implements PatternDAO{
  	 * @param PatternMySql pattern
  	 */
 	public function insert($pattern){
-		$sql = 'INSERT INTO pattern (name, categoryid, userid, resolutionid, aspectratioid, maketime) VALUES (?, ?, ?, ?, ?, ?)';
+		$sql = 'INSERT INTO pattern (name, categoryid, username, resolutionid, aspectratioid, maketime) VALUES (?, ?, ?, ?, ?, ?)';
 		$sqlQuery = new SqlQuery($sql);
 		
 		$sqlQuery->set($pattern->name);
 		$sqlQuery->setNumber($pattern->categoryid);
-		$sqlQuery->setNumber($pattern->userid);
+		$sqlQuery->set($pattern->username);
 		$sqlQuery->setNumber($pattern->resolutionid);
 		$sqlQuery->setNumber($pattern->aspectratioid);
 		$sqlQuery->set($pattern->maketime);
@@ -78,12 +78,12 @@ class PatternMySqlDAO implements PatternDAO{
  	 * @param PatternMySql pattern
  	 */
 	public function update($pattern){
-		$sql = 'UPDATE pattern SET name = ?, categoryid = ?, userid = ?, resolutionid = ?, aspectratioid = ?, maketime = ? WHERE patternid = ?';
+		$sql = 'UPDATE pattern SET name = ?, categoryid = ?, username = ?, resolutionid = ?, aspectratioid = ?, maketime = ? WHERE patternid = ?';
 		$sqlQuery = new SqlQuery($sql);
 		
 		$sqlQuery->set($pattern->name);
 		$sqlQuery->setNumber($pattern->categoryid);
-		$sqlQuery->setNumber($pattern->userid);
+		$sqlQuery->set($pattern->username);
 		$sqlQuery->setNumber($pattern->resolutionid);
 		$sqlQuery->setNumber($pattern->aspectratioid);
 		$sqlQuery->set($pattern->maketime);
@@ -115,10 +115,10 @@ class PatternMySqlDAO implements PatternDAO{
 		return $this->getList($sqlQuery);
 	}
 
-	public function queryByUserid($value){
-		$sql = 'SELECT * FROM pattern WHERE userid = ?';
+	public function queryByUsername($value){
+		$sql = 'SELECT * FROM pattern WHERE username = ?';
 		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->setNumber($value);
+		$sqlQuery->set($value);
 		return $this->getList($sqlQuery);
 	}
 
@@ -158,10 +158,10 @@ class PatternMySqlDAO implements PatternDAO{
 		return $this->executeUpdate($sqlQuery);
 	}
 
-	public function deleteByUserid($value){
-		$sql = 'DELETE FROM pattern WHERE userid = ?';
+	public function deleteByUsername($value){
+		$sql = 'DELETE FROM pattern WHERE username = ?';
 		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->setNumber($value);
+		$sqlQuery->set($value);
 		return $this->executeUpdate($sqlQuery);
 	}
 
@@ -199,7 +199,7 @@ class PatternMySqlDAO implements PatternDAO{
 		$pattern->patternid = $row['patternid'];
 		$pattern->name = $row['name'];
 		$pattern->categoryid = $row['categoryid'];
-		$pattern->userid = $row['userid'];
+		$pattern->username = $row['username'];
 		$pattern->resolutionid = $row['resolutionid'];
 		$pattern->aspectratioid = $row['aspectratioid'];
 		$pattern->maketime = $row['maketime'];

@@ -3,7 +3,7 @@
  * Intreface DAO
  *
  * @author: http://phpdao.com
- * @date: 2011-12-13 09:00
+ * @date: 2011-12-15 02:58
  */
 interface TerminalDAO{
 
@@ -65,7 +65,7 @@ interface TerminalDAO{
 
 	public function queryByTerminalGroupid($value);
 
-	public function queryByUserid($value);
+	public function queryByUsername($value);
 
 
 	public function deleteByTerminalName($value);
@@ -82,7 +82,7 @@ interface TerminalDAO{
 
 	public function deleteByTerminalGroupid($value);
 
-	public function deleteByUserid($value);
+	public function deleteByUsername($value);
 
 
 }

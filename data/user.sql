@@ -2,28 +2,26 @@ create database adcontrol;
 use adcontrol;
 
 create table user (
-	userid int not null auto_increment primary key,
-	username char(20) not null,
+	username char(20) not null primary key,
 	passwd char(40) not null,
 	email char(100),
 	userstatus enum('online', 'offline') not null,
-	usergroupid int unsigned not null,
+	usergroupname char(20) not null,
 	authority enum('province', 'country') not null
 );
 
 create table usergroup(
-	usergroupid int unsigned not null primary key,
-	usergroupname char(20) not null,
+	usergroupname char(20) not null primary key,
 	group_authority enum('province', 'country') not null
 );
 
 insert into usergroup values
-	(1, 'defalt', 'province'),
-	(2, 'bsq', 'province');
+	('defalt', 'province'),
+	('bsq', 'province');
 	
-insert into user (username, passwd, userstatus, usergroupid, authority) values
-	('root', sha1('root'), 'offline', 1, 'province'),
-	('admin', sha1('admin'), 'offline', 1, 'province');
+insert into user (username, passwd, userstatus, usergroupname, authority) values
+	('root', sha1('root'), 'offline', 'default', 'province'),
+	('admin', sha1('admin'), 'offline', 'default', 'province');
 
 	
 	
@@ -36,7 +34,7 @@ create table terminal (
 	volume tinyint not null,
 	terminal_status enum('online', 'offline') not null,
 	terminal_groupid int unsigned not null,
-	userid int unsigned not null
+	username char(20) not null
 );
 
 create table terminalinfo (
@@ -98,7 +96,7 @@ create table media (
 	mediastatus enum('verified', 'verifying', 'denied') not null,
 	mediasize int not null,
 	uploadtime datetime not null,
-	userid int unsigned not null
+	username char(20) not null
 );
 
 create table mediainfo (
@@ -118,7 +116,7 @@ create table pattern (
 	patternid int unsigned not null primary key,
 	name char(30) not null,
 	categoryid int,
-	userid int unsigned not null,
+	username char(20) not null,
 	resolutionid int unsigned not null,
 	aspectratioid int unsigned not null,
 	maketime datetime not null
@@ -142,7 +140,7 @@ create table playlist (
 	playlistid int unsigned not null primary key,
 	name char(30) not null,
 	patternid int unsigned not null,
-	userid int unsigned not null
+	username char(20) not null
 );
 
 create table playlistitem (
@@ -157,7 +155,7 @@ create table playlistitem (
 create table playschedule (
 	playscheduleid int unsigned not null primary key,
 	name char(30) not null,
-	userid int unsigned,
+	username char(20) not null,
 	scheduledate date not null,
 	starttime time not null,
 	endtime time not null,

@@ -3,7 +3,7 @@
  * Class that operate on table 'usergroup'. Database Mysql.
  *
  * @author: http://phpdao.com
- * @date: 2011-12-13 09:00
+ * @date: 2011-12-15 02:58
  */
 class UsergroupMySqlDAO implements UsergroupDAO{
 
@@ -14,9 +14,9 @@ class UsergroupMySqlDAO implements UsergroupDAO{
 	 * @return UsergroupMySql 
 	 */
 	public function load($id){
-		$sql = 'SELECT * FROM usergroup WHERE usergroupid = ?';
+		$sql = 'SELECT * FROM usergroup WHERE usergroupname = ?';
 		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->setNumber($id);
+		$sqlQuery->set($id);
 		return $this->getRow($sqlQuery);
 	}
 
@@ -44,10 +44,10 @@ class UsergroupMySqlDAO implements UsergroupDAO{
  	 * Delete record from table
  	 * @param usergroup primary key
  	 */
-	public function delete($usergroupid){
-		$sql = 'DELETE FROM usergroup WHERE usergroupid = ?';
+	public function delete($usergroupname){
+		$sql = 'DELETE FROM usergroup WHERE usergroupname = ?';
 		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->setNumber($usergroupid);
+		$sqlQuery->set($usergroupname);
 		return $this->executeUpdate($sqlQuery);
 	}
 	
@@ -57,14 +57,13 @@ class UsergroupMySqlDAO implements UsergroupDAO{
  	 * @param UsergroupMySql usergroup
  	 */
 	public function insert($usergroup){
-		$sql = 'INSERT INTO usergroup (usergroupname, group_authority) VALUES (?, ?)';
+		$sql = 'INSERT INTO usergroup (group_authority) VALUES (?)';
 		$sqlQuery = new SqlQuery($sql);
 		
-		$sqlQuery->set($usergroup->usergroupname);
 		$sqlQuery->set($usergroup->groupAuthority);
 
 		$id = $this->executeInsert($sqlQuery);	
-		$usergroup->usergroupid = $id;
+		$usergroup->usergroupname = $id;
 		return $id;
 	}
 	
@@ -74,13 +73,12 @@ class UsergroupMySqlDAO implements UsergroupDAO{
  	 * @param UsergroupMySql usergroup
  	 */
 	public function update($usergroup){
-		$sql = 'UPDATE usergroup SET usergroupname = ?, group_authority = ? WHERE usergroupid = ?';
+		$sql = 'UPDATE usergroup SET group_authority = ? WHERE usergroupname = ?';
 		$sqlQuery = new SqlQuery($sql);
 		
-		$sqlQuery->set($usergroup->usergroupname);
 		$sqlQuery->set($usergroup->groupAuthority);
 
-		$sqlQuery->setNumber($usergroup->usergroupid);
+		$sqlQuery->set($usergroup->usergroupname);
 		return $this->executeUpdate($sqlQuery);
 	}
 
@@ -93,13 +91,6 @@ class UsergroupMySqlDAO implements UsergroupDAO{
 		return $this->executeUpdate($sqlQuery);
 	}
 
-	public function queryByUsergroupname($value){
-		$sql = 'SELECT * FROM usergroup WHERE usergroupname = ?';
-		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->set($value);
-		return $this->getList($sqlQuery);
-	}
-
 	public function queryByGroupAuthority($value){
 		$sql = 'SELECT * FROM usergroup WHERE group_authority = ?';
 		$sqlQuery = new SqlQuery($sql);
@@ -107,13 +98,6 @@ class UsergroupMySqlDAO implements UsergroupDAO{
 		return $this->getList($sqlQuery);
 	}
 
-
-	public function deleteByUsergroupname($value){
-		$sql = 'DELETE FROM usergroup WHERE usergroupname = ?';
-		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->set($value);
-		return $this->executeUpdate($sqlQuery);
-	}
 
 	public function deleteByGroupAuthority($value){
 		$sql = 'DELETE FROM usergroup WHERE group_authority = ?';
@@ -132,7 +116,6 @@ class UsergroupMySqlDAO implements UsergroupDAO{
 	protected function readRow($row){
 		$usergroup = new Usergroup();
 		
-		$usergroup->usergroupid = $row['usergroupid'];
 		$usergroup->usergroupname = $row['usergroupname'];
 		$usergroup->groupAuthority = $row['group_authority'];
 

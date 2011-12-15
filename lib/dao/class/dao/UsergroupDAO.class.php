@@ -3,7 +3,7 @@
  * Intreface DAO
  *
  * @author: http://phpdao.com
- * @date: 2011-12-13 09:00
+ * @date: 2011-12-15 02:58
  */
 interface UsergroupDAO{
 
@@ -30,7 +30,7 @@ interface UsergroupDAO{
  	 * Delete record from table
  	 * @param usergroup primary key
  	 */
-	public function delete($usergroupid);
+	public function delete($usergroupname);
 	
 	/**
  	 * Insert record to table
@@ -51,12 +51,8 @@ interface UsergroupDAO{
 	 */
 	public function clean();
 
-	public function queryByUsergroupname($value);
-
 	public function queryByGroupAuthority($value);
 
-
-	public function deleteByUsergroupname($value);
 
 	public function deleteByGroupAuthority($value);
 

@@ -3,7 +3,7 @@
  * Intreface DAO
  *
  * @author: http://phpdao.com
- * @date: 2011-12-13 09:00
+ * @date: 2011-12-15 02:58
  */
 interface PlaylistDAO{
 
@@ -55,14 +55,14 @@ interface PlaylistDAO{
 
 	public function queryByPatternid($value);
 
-	public function queryByUserid($value);
+	public function queryByUsername($value);
 
 
 	public function deleteByName($value);
 
 	public function deleteByPatternid($value);
 
-	public function deleteByUserid($value);
+	public function deleteByUsername($value);
 
 
 }

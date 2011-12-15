@@ -3,7 +3,7 @@
  * Class that operate on table 'playschedule'. Database Mysql.
  *
  * @author: http://phpdao.com
- * @date: 2011-12-13 09:00
+ * @date: 2011-12-15 02:58
  */
 class PlayscheduleMySqlDAO implements PlayscheduleDAO{
 
@@ -57,11 +57,11 @@ class PlayscheduleMySqlDAO implements PlayscheduleDAO{
  	 * @param PlayscheduleMySql playschedule
  	 */
 	public function insert($playschedule){
-		$sql = 'INSERT INTO playschedule (name, userid, scheduledate, starttime, endtime, scheduletypeid) VALUES (?, ?, ?, ?, ?, ?)';
+		$sql = 'INSERT INTO playschedule (name, username, scheduledate, starttime, endtime, scheduletypeid) VALUES (?, ?, ?, ?, ?, ?)';
 		$sqlQuery = new SqlQuery($sql);
 		
 		$sqlQuery->set($playschedule->name);
-		$sqlQuery->setNumber($playschedule->userid);
+		$sqlQuery->set($playschedule->username);
 		$sqlQuery->set($playschedule->scheduledate);
 		$sqlQuery->set($playschedule->starttime);
 		$sqlQuery->set($playschedule->endtime);
@@ -78,11 +78,11 @@ class PlayscheduleMySqlDAO implements PlayscheduleDAO{
  	 * @param PlayscheduleMySql playschedule
  	 */
 	public function update($playschedule){
-		$sql = 'UPDATE playschedule SET name = ?, userid = ?, scheduledate = ?, starttime = ?, endtime = ?, scheduletypeid = ? WHERE playscheduleid = ?';
+		$sql = 'UPDATE playschedule SET name = ?, username = ?, scheduledate = ?, starttime = ?, endtime = ?, scheduletypeid = ? WHERE playscheduleid = ?';
 		$sqlQuery = new SqlQuery($sql);
 		
 		$sqlQuery->set($playschedule->name);
-		$sqlQuery->setNumber($playschedule->userid);
+		$sqlQuery->set($playschedule->username);
 		$sqlQuery->set($playschedule->scheduledate);
 		$sqlQuery->set($playschedule->starttime);
 		$sqlQuery->set($playschedule->endtime);
@@ -108,10 +108,10 @@ class PlayscheduleMySqlDAO implements PlayscheduleDAO{
 		return $this->getList($sqlQuery);
 	}
 
-	public function queryByUserid($value){
-		$sql = 'SELECT * FROM playschedule WHERE userid = ?';
+	public function queryByUsername($value){
+		$sql = 'SELECT * FROM playschedule WHERE username = ?';
 		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->setNumber($value);
+		$sqlQuery->set($value);
 		return $this->getList($sqlQuery);
 	}
 
@@ -151,10 +151,10 @@ class PlayscheduleMySqlDAO implements PlayscheduleDAO{
 		return $this->executeUpdate($sqlQuery);
 	}
 
-	public function deleteByUserid($value){
-		$sql = 'DELETE FROM playschedule WHERE userid = ?';
+	public function deleteByUsername($value){
+		$sql = 'DELETE FROM playschedule WHERE username = ?';
 		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->setNumber($value);
+		$sqlQuery->set($value);
 		return $this->executeUpdate($sqlQuery);
 	}
 
@@ -198,7 +198,7 @@ class PlayscheduleMySqlDAO implements PlayscheduleDAO{
 		
 		$playschedule->playscheduleid = $row['playscheduleid'];
 		$playschedule->name = $row['name'];
-		$playschedule->userid = $row['userid'];
+		$playschedule->username = $row['username'];
 		$playschedule->scheduledate = $row['scheduledate'];
 		$playschedule->starttime = $row['starttime'];
 		$playschedule->endtime = $row['endtime'];

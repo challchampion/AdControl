@@ -3,12 +3,11 @@
 	 * Object represents table 'usergroup'
 	 *
      	 * @author: http://phpdao.com
-     	 * @date: 2011-12-13 09:00	 
+     	 * @date: 2011-12-15 02:58	 
 	 */
 	class Usergroup{
 		
-		var $usergroupid;
-		var $usergroupname;
+		var $usergroupname;
 		var $groupAuthority;
 		
 	}

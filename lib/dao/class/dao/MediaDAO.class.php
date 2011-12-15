@@ -3,7 +3,7 @@
  * Intreface DAO
  *
  * @author: http://phpdao.com
- * @date: 2011-12-13 09:00
+ * @date: 2011-12-15 02:58
  */
 interface MediaDAO{
 
@@ -61,7 +61,7 @@ interface MediaDAO{
 
 	public function queryByUploadtime($value);
 
-	public function queryByUserid($value);
+	public function queryByUsername($value);
 
 
 	public function deleteByCategoryid($value);
@@ -74,7 +74,7 @@ interface MediaDAO{
 
 	public function deleteByUploadtime($value);
 
-	public function deleteByUserid($value);
+	public function deleteByUsername($value);
 
 
 }

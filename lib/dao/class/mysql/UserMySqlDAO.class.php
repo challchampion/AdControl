@@ -3,7 +3,7 @@
  * Class that operate on table 'user'. Database Mysql.
  *
  * @author: http://phpdao.com
- * @date: 2011-12-13 09:00
+ * @date: 2011-12-15 02:58
  */
 class UserMySqlDAO implements UserDAO{
 
@@ -13,10 +13,10 @@ class UserMySqlDAO implements UserDAO{
 	 * @param String $id primary key
 	 * @return UserMySql 
 	 */
-	public function load($id){
-		$sql = 'SELECT * FROM user WHERE userid = ?';
+	public function load($username){
+		$sql = 'SELECT * FROM user WHERE username = ?';
 		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->setNumber($id);
+		$sqlQuery->set($username);
 		return $this->getRow($sqlQuery);
 	}
 
@@ -44,10 +44,10 @@ class UserMySqlDAO implements UserDAO{
  	 * Delete record from table
  	 * @param user primary key
  	 */
-	public function delete($userid){
-		$sql = 'DELETE FROM user WHERE userid = ?';
+	public function delete($username){
+		$sql = 'DELETE FROM user WHERE username = ?';
 		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->setNumber($userid);
+		$sqlQuery->set($username);
 		return $this->executeUpdate($sqlQuery);
 	}
 	
@@ -57,18 +57,17 @@ class UserMySqlDAO implements UserDAO{
  	 * @param UserMySql user
  	 */
 	public function insert($user){
-		$sql = 'INSERT INTO user (username, passwd, email, userstatus, usergroupid, authority) VALUES (?, ?, ?, ?, ?, ?)';
+		$sql = 'INSERT INTO user (passwd, email, userstatus, usergroupname, authority) VALUES (?, ?, ?, ?, ?)';
 		$sqlQuery = new SqlQuery($sql);
 		
-		$sqlQuery->set($user->username);
 		$sqlQuery->set($user->passwd);
 		$sqlQuery->set($user->email);
 		$sqlQuery->set($user->userstatus);
-		$sqlQuery->setNumber($user->usergroupid);
+		$sqlQuery->set($user->usergroupname);
 		$sqlQuery->set($user->authority);
 
 		$id = $this->executeInsert($sqlQuery);	
-		$user->userid = $id;
+		$user->username = $id;
 		return $id;
 	}
 	
@@ -78,17 +77,34 @@ class UserMySqlDAO implements UserDAO{
  	 * @param UserMySql user
  	 */
 	public function update($user){
-		$sql = 'UPDATE user SET username = ?, passwd = ?, email = ?, userstatus = ?, usergroupid = ?, authority = ? WHERE userid = ?';
+		$sql = 'UPDATE user SET passwd = ?, email = ?, userstatus = ?, usergroupname = ?, authority = ? WHERE username = ?';
 		$sqlQuery = new SqlQuery($sql);
 		
-		$sqlQuery->set($user->username);
 		$sqlQuery->set($user->passwd);
 		$sqlQuery->set($user->email);
 		$sqlQuery->set($user->userstatus);
-		$sqlQuery->setNumber($user->usergroupid);
+		$sqlQuery->set($user->usergroupname);
 		$sqlQuery->set($user->authority);
 
-		$sqlQuery->setNumber($user->userid);
+		$sqlQuery->set($user->username);
+		return $this->executeUpdate($sqlQuery);
+	}
+	
+	public function updatePasswd($user){
+		$sql = 'UPDATE user SET passwd = ? WHERE username = ?';
+		$sqlQuery = new SqlQuery($sql);
+		
+		$sqlQuery->set($user->passwd);
+		$sqlQuery->set($user->username);
+		return $this->executeUpdate($sqlQuery);
+	}
+	
+	public function updateUsergroup($user){
+		$sql = 'UPDATE user SET usergroupname = ? WHERE username = ?';
+		$sqlQuery = new SqlQuery($sql);
+		
+		$sqlQuery->set($user->usergroupname);
+		$sqlQuery->set($user->username);
 		return $this->executeUpdate($sqlQuery);
 	}
 
@@ -99,29 +115,6 @@ class UserMySqlDAO implements UserDAO{
 		$sql = 'DELETE FROM user';
 		$sqlQuery = new SqlQuery($sql);
 		return $this->executeUpdate($sqlQuery);
-	}
-	
-	public function exist($user){
-		$sql = 'SELECT * FROM user WHERE username = ? AND passwd = ?';
-		$sqlQuery = new SqlQuery($sql);
-		
-		$sqlQuery->set($user->username);
-		$sqlQuery->set($user->passwd);
-		
-		$rs = QueryExecutor::execute($sqlQuery);
-		
-		if(count($rs) === 0){
-			return false;
-		} else {
-			return true;
-		}
-	}
-
-	public function queryByUsername($value){
-		$sql = 'SELECT * FROM user WHERE username = ?';
-		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->set($value);
-		return $this->getList($sqlQuery);
 	}
 
 	public function queryByPasswd($value){
@@ -145,10 +138,10 @@ class UserMySqlDAO implements UserDAO{
 		return $this->getList($sqlQuery);
 	}
 
-	public function queryByUsergroupid($value){
-		$sql = 'SELECT * FROM user WHERE usergroupid = ?';
+	public function queryByUsergroupname($value){
+		$sql = 'SELECT * FROM user WHERE usergroupname = ?';
 		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->setNumber($value);
+		$sqlQuery->set($value);
 		return $this->getList($sqlQuery);
 	}
 
@@ -159,13 +152,6 @@ class UserMySqlDAO implements UserDAO{
 		return $this->getList($sqlQuery);
 	}
 
-
-	public function deleteByUsername($value){
-		$sql = 'DELETE FROM user WHERE username = ?';
-		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->set($value);
-		return $this->executeUpdate($sqlQuery);
-	}
 
 	public function deleteByPasswd($value){
 		$sql = 'DELETE FROM user WHERE passwd = ?';
@@ -188,10 +174,10 @@ class UserMySqlDAO implements UserDAO{
 		return $this->executeUpdate($sqlQuery);
 	}
 
-	public function deleteByUsergroupid($value){
-		$sql = 'DELETE FROM user WHERE usergroupid = ?';
+	public function deleteByUsergroupname($value){
+		$sql = 'DELETE FROM user WHERE usergroupname = ?';
 		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->setNumber($value);
+		$sqlQuery->set($value);
 		return $this->executeUpdate($sqlQuery);
 	}
 
@@ -212,12 +198,11 @@ class UserMySqlDAO implements UserDAO{
 	protected function readRow($row){
 		$user = new User();
 		
-		$user->userid = $row['userid'];
 		$user->username = $row['username'];
 		$user->passwd = $row['passwd'];
 		$user->email = $row['email'];
 		$user->userstatus = $row['userstatus'];
-		$user->usergroupid = $row['usergroupid'];
+		$user->usergroupname = $row['usergroupname'];
 		$user->authority = $row['authority'];
 
 		return $user;

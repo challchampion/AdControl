@@ -3,7 +3,7 @@
  * Intreface DAO
  *
  * @author: http://phpdao.com
- * @date: 2011-12-13 09:00
+ * @date: 2011-12-15 02:58
  */
 interface PlayscheduleDAO{
 
@@ -53,7 +53,7 @@ interface PlayscheduleDAO{
 
 	public function queryByName($value);
 
-	public function queryByUserid($value);
+	public function queryByUsername($value);
 
 	public function queryByScheduledate($value);
 
@@ -66,7 +66,7 @@ interface PlayscheduleDAO{
 
 	public function deleteByName($value);
 
-	public function deleteByUserid($value);
+	public function deleteByUsername($value);
 
 	public function deleteByScheduledate($value);
 

@@ -3,7 +3,7 @@
  * Intreface DAO
  *
  * @author: http://phpdao.com
- * @date: 2011-12-13 09:00
+ * @date: 2011-12-15 02:58
  */
 interface PatternDAO{
 
@@ -55,7 +55,7 @@ interface PatternDAO{
 
 	public function queryByCategoryid($value);
 
-	public function queryByUserid($value);
+	public function queryByUsername($value);
 
 	public function queryByResolutionid($value);
 
@@ -68,7 +68,7 @@ interface PatternDAO{
 
 	public function deleteByCategoryid($value);
 
-	public function deleteByUserid($value);
+	public function deleteByUsername($value);
 
 	public function deleteByResolutionid($value);
 

@@ -3,7 +3,7 @@
  * Class that operate on table 'media'. Database Mysql.
  *
  * @author: http://phpdao.com
- * @date: 2011-12-13 09:00
+ * @date: 2011-12-15 02:58
  */
 class MediaMySqlDAO implements MediaDAO{
 
@@ -57,7 +57,7 @@ class MediaMySqlDAO implements MediaDAO{
  	 * @param MediaMySql media
  	 */
 	public function insert($media){
-		$sql = 'INSERT INTO media (categoryid, mediapath, mediastatus, mediasize, uploadtime, userid) VALUES (?, ?, ?, ?, ?, ?)';
+		$sql = 'INSERT INTO media (categoryid, mediapath, mediastatus, mediasize, uploadtime, username) VALUES (?, ?, ?, ?, ?, ?)';
 		$sqlQuery = new SqlQuery($sql);
 		
 		$sqlQuery->setNumber($media->categoryid);
@@ -65,7 +65,7 @@ class MediaMySqlDAO implements MediaDAO{
 		$sqlQuery->set($media->mediastatus);
 		$sqlQuery->setNumber($media->mediasize);
 		$sqlQuery->set($media->uploadtime);
-		$sqlQuery->setNumber($media->userid);
+		$sqlQuery->set($media->username);
 
 		$id = $this->executeInsert($sqlQuery);	
 		$media->mediaid = $id;
@@ -78,7 +78,7 @@ class MediaMySqlDAO implements MediaDAO{
  	 * @param MediaMySql media
  	 */
 	public function update($media){
-		$sql = 'UPDATE media SET categoryid = ?, mediapath = ?, mediastatus = ?, mediasize = ?, uploadtime = ?, userid = ? WHERE mediaid = ?';
+		$sql = 'UPDATE media SET categoryid = ?, mediapath = ?, mediastatus = ?, mediasize = ?, uploadtime = ?, username = ? WHERE mediaid = ?';
 		$sqlQuery = new SqlQuery($sql);
 		
 		$sqlQuery->setNumber($media->categoryid);
@@ -86,7 +86,7 @@ class MediaMySqlDAO implements MediaDAO{
 		$sqlQuery->set($media->mediastatus);
 		$sqlQuery->setNumber($media->mediasize);
 		$sqlQuery->set($media->uploadtime);
-		$sqlQuery->setNumber($media->userid);
+		$sqlQuery->set($media->username);
 
 		$sqlQuery->setNumber($media->mediaid);
 		return $this->executeUpdate($sqlQuery);
@@ -136,10 +136,10 @@ class MediaMySqlDAO implements MediaDAO{
 		return $this->getList($sqlQuery);
 	}
 
-	public function queryByUserid($value){
-		$sql = 'SELECT * FROM media WHERE userid = ?';
+	public function queryByUsername($value){
+		$sql = 'SELECT * FROM media WHERE username = ?';
 		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->setNumber($value);
+		$sqlQuery->set($value);
 		return $this->getList($sqlQuery);
 	}
 
@@ -179,10 +179,10 @@ class MediaMySqlDAO implements MediaDAO{
 		return $this->executeUpdate($sqlQuery);
 	}
 
-	public function deleteByUserid($value){
-		$sql = 'DELETE FROM media WHERE userid = ?';
+	public function deleteByUsername($value){
+		$sql = 'DELETE FROM media WHERE username = ?';
 		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->setNumber($value);
+		$sqlQuery->set($value);
 		return $this->executeUpdate($sqlQuery);
 	}
 
@@ -202,7 +202,7 @@ class MediaMySqlDAO implements MediaDAO{
 		$media->mediastatus = $row['mediastatus'];
 		$media->mediasize = $row['mediasize'];
 		$media->uploadtime = $row['uploadtime'];
-		$media->userid = $row['userid'];
+		$media->username = $row['username'];
 
 		return $media;
 	}

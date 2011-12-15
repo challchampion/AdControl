@@ -3,7 +3,7 @@
 	 * Object represents table 'media'
 	 *
      	 * @author: http://phpdao.com
-     	 * @date: 2011-12-13 09:00	 
+     	 * @date: 2011-12-15 02:58	 
 	 */
 	class Media{
 		
@@ -13,7 +13,7 @@
 		var $mediastatus;
 		var $mediasize;
 		var $uploadtime;
-		var $userid;
+		var $username;
 		
 	}
 ?>
