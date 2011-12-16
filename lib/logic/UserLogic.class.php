@@ -1,9 +1,10 @@
 <?php
+	namespace lib\logic;
 	
 	error_reporting(E_ALL);
 
     require_once('base.inc.php');
-
+    
     class UserLogic {
     	const USERSUCCESS = 0;
     	

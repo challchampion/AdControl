@@ -1,0 +1,52 @@
+body {
+	background-color: #000;
+	color: #f7f7f7;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	font-family: arial, serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+#login {
+	background-color: rgba(100, 100, 100, .4);
+	font-size: 30px;
+	font-weight: bold;
+	width: 400px;
+	margin: 15% auto;
+	padding: 30px 30px 30px 30px;
+	border: solid 4px #444444;
+	-webkit-border-radius: 10px;
+}
+
+#login table {
+	line-height: 50px;
+}
+
+#userlabel, #passlabel {
+	font-size: 25px;
+}
+
+#user, #password {
+	font-size: 25px;
+	margin-left: 20px;
+}
+
+#submit {
+	background-color: rgba(80, 80, 80, .3);
+	width: 50%;
+	color: #f0f0f0;
+	font-size: 25px;
+	margin-left: 20px;
+}

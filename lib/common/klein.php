@@ -7,7 +7,7 @@ $__routes = array();
 $__namespace = null;
 
 //Add a route callback
-function respond($method, $route = '*', $callback = null) {
+function respond($method, $route = '*', $callback = null) {	
     global $__routes, $__namespace;
     $count_match = true;
     if (is_callable($method)) {
