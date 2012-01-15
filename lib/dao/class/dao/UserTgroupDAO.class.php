@@ -5,15 +5,15 @@
  * @author: http://phpdao.com
  * @date: 2011-12-29 14:21
  */
-interface TerminalgroupDAO{
+interface UserTgroupDAO{
 
 	/**
 	 * Get Domain object by primry key
 	 *
 	 * @param String $id primary key
-	 * @Return Terminalgroup 
+	 * @Return UserTgroup 
 	 */
-	public function load($id);
+	public function load($userid, $groupid);
 
 	/**
 	 * Get all records from table
@@ -28,41 +28,29 @@ interface TerminalgroupDAO{
 	
 	/**
  	 * Delete record from table
- 	 * @param terminalgroup primary key
+ 	 * @param userTgroup primary key
  	 */
-	public function delete($groupid);
+	public function delete($userid, $groupid);
 	
 	/**
  	 * Insert record to table
  	 *
- 	 * @param Terminalgroup terminalgroup
+ 	 * @param UserTgroup userTgroup
  	 */
-	public function insert($terminalgroup);
+	public function insert($userTgroup);
 	
 	/**
  	 * Update record in table
  	 *
- 	 * @param Terminalgroup terminalgroup
+ 	 * @param UserTgroup userTgroup
  	 */
-	public function update($terminalgroup);	
+	public function update($userTgroup);	
 
 	/**
 	 * Delete all rows
 	 */
 	public function clean();
 
-	public function queryByGroupname($value);
-
-	public function queryByEnterprisename($value);
-
-	public function queryByParent($value);
-
-
-	public function deleteByGroupname($value);
-
-	public function deleteByEnterprisename($value);
-
-	public function deleteByParent($value);
 
 
 }

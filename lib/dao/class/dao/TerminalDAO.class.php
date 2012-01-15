@@ -3,7 +3,7 @@
  * Intreface DAO
  *
  * @author: http://phpdao.com
- * @date: 2011-12-15 02:58
+ * @date: 2011-12-29 14:21
  */
 interface TerminalDAO{
 
@@ -30,7 +30,7 @@ interface TerminalDAO{
  	 * Delete record from table
  	 * @param terminal primary key
  	 */
-	public function delete($terminalid);
+	public function delete($mac);
 	
 	/**
  	 * Insert record to table
@@ -51,38 +51,34 @@ interface TerminalDAO{
 	 */
 	public function clean();
 
-	public function queryByTerminalName($value);
-
-	public function queryByTerminalType($value);
+	public function queryByGroupid($value);
 
 	public function queryByIp($value);
 
-	public function queryByMac($value);
+	public function queryByTerminalname($value);
 
-	public function queryByVolume($value);
+	public function queryByDiscinfo($value);
 
-	public function queryByTerminalStatus($value);
+	public function queryByAddress($value);
 
-	public function queryByTerminalGroupid($value);
+	public function queryByTerminaltype($value);
 
-	public function queryByUsername($value);
+	public function queryByVersion($value);
 
 
-	public function deleteByTerminalName($value);
-
-	public function deleteByTerminalType($value);
+	public function deleteByGroupid($value);
 
 	public function deleteByIp($value);
 
-	public function deleteByMac($value);
+	public function deleteByTerminalname($value);
 
-	public function deleteByVolume($value);
+	public function deleteByDiscinfo($value);
 
-	public function deleteByTerminalStatus($value);
+	public function deleteByAddress($value);
 
-	public function deleteByTerminalGroupid($value);
+	public function deleteByTerminaltype($value);
 
-	public function deleteByUsername($value);
+	public function deleteByVersion($value);
 
 
 }

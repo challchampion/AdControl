@@ -3,7 +3,7 @@
  * Class that operate on table 'terminal'. Database Mysql.
  *
  * @author: http://phpdao.com
- * @date: 2011-12-15 02:58
+ * @date: 2011-12-29 14:21
  */
 class TerminalMySqlDAO implements TerminalDAO{
 
@@ -14,9 +14,9 @@ class TerminalMySqlDAO implements TerminalDAO{
 	 * @return TerminalMySql 
 	 */
 	public function load($id){
-		$sql = 'SELECT * FROM terminal WHERE terminalid = ?';
+		$sql = 'SELECT * FROM terminal WHERE mac = ?';
 		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->setNumber($id);
+		$sqlQuery->set($id);
 		return $this->getRow($sqlQuery);
 	}
 
@@ -44,10 +44,10 @@ class TerminalMySqlDAO implements TerminalDAO{
  	 * Delete record from table
  	 * @param terminal primary key
  	 */
-	public function delete($terminalid){
-		$sql = 'DELETE FROM terminal WHERE terminalid = ?';
+	public function delete($mac){
+		$sql = 'DELETE FROM terminal WHERE mac = ?';
 		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->setNumber($terminalid);
+		$sqlQuery->set($mac);
 		return $this->executeUpdate($sqlQuery);
 	}
 	
@@ -57,20 +57,19 @@ class TerminalMySqlDAO implements TerminalDAO{
  	 * @param TerminalMySql terminal
  	 */
 	public function insert($terminal){
-		$sql = 'INSERT INTO terminal (terminal_name, terminal_type, ip, mac, volume, terminal_status, terminal_groupid, username) VALUES (?, ?, ?, ?, ?, ?, ?, ?)';
+		$sql = 'INSERT INTO terminal (groupid, ip, terminalname, discinfo, address, terminaltype, version) VALUES (?, ?, ?, ?, ?, ?, ?)';
 		$sqlQuery = new SqlQuery($sql);
 		
-		$sqlQuery->set($terminal->terminalName);
-		$sqlQuery->set($terminal->terminalType);
+		$sqlQuery->setNumber($terminal->groupid);
 		$sqlQuery->set($terminal->ip);
-		$sqlQuery->set($terminal->mac);
-		$sqlQuery->setNumber($terminal->volume);
-		$sqlQuery->set($terminal->terminalStatus);
-		$sqlQuery->setNumber($terminal->terminalGroupid);
-		$sqlQuery->set($terminal->username);
+		$sqlQuery->set($terminal->terminalname);
+		$sqlQuery->setNumber($terminal->discinfo);
+		$sqlQuery->set($terminal->address);
+		$sqlQuery->set($terminal->terminaltype);
+		$sqlQuery->set($terminal->version);
 
 		$id = $this->executeInsert($sqlQuery);	
-		$terminal->terminalid = $id;
+		$terminal->mac = $id;
 		return $id;
 	}
 	
@@ -80,19 +79,18 @@ class TerminalMySqlDAO implements TerminalDAO{
  	 * @param TerminalMySql terminal
  	 */
 	public function update($terminal){
-		$sql = 'UPDATE terminal SET terminal_name = ?, terminal_type = ?, ip = ?, mac = ?, volume = ?, terminal_status = ?, terminal_groupid = ?, username = ? WHERE terminalid = ?';
+		$sql = 'UPDATE terminal SET groupid = ?, ip = ?, terminalname = ?, discinfo = ?, address = ?, terminaltype = ?, version = ? WHERE mac = ?';
 		$sqlQuery = new SqlQuery($sql);
 		
-		$sqlQuery->set($terminal->terminalName);
-		$sqlQuery->set($terminal->terminalType);
+		$sqlQuery->setNumber($terminal->groupid);
 		$sqlQuery->set($terminal->ip);
-		$sqlQuery->set($terminal->mac);
-		$sqlQuery->setNumber($terminal->volume);
-		$sqlQuery->set($terminal->terminalStatus);
-		$sqlQuery->setNumber($terminal->terminalGroupid);
-		$sqlQuery->set($terminal->username);
+		$sqlQuery->set($terminal->terminalname);
+		$sqlQuery->setNumber($terminal->discinfo);
+		$sqlQuery->set($terminal->address);
+		$sqlQuery->set($terminal->terminaltype);
+		$sqlQuery->set($terminal->version);
 
-		$sqlQuery->setNumber($terminal->terminalid);
+		$sqlQuery->set($terminal->mac);
 		return $this->executeUpdate($sqlQuery);
 	}
 
@@ -105,17 +103,10 @@ class TerminalMySqlDAO implements TerminalDAO{
 		return $this->executeUpdate($sqlQuery);
 	}
 
-	public function queryByTerminalName($value){
-		$sql = 'SELECT * FROM terminal WHERE terminal_name = ?';
+	public function queryByGroupid($value){
+		$sql = 'SELECT * FROM terminal WHERE groupid = ?';
 		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->set($value);
-		return $this->getList($sqlQuery);
-	}
-
-	public function queryByTerminalType($value){
-		$sql = 'SELECT * FROM terminal WHERE terminal_type = ?';
-		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->set($value);
+		$sqlQuery->setNumber($value);
 		return $this->getList($sqlQuery);
 	}
 
@@ -126,53 +117,46 @@ class TerminalMySqlDAO implements TerminalDAO{
 		return $this->getList($sqlQuery);
 	}
 
-	public function queryByMac($value){
-		$sql = 'SELECT * FROM terminal WHERE mac = ?';
+	public function queryByTerminalname($value){
+		$sql = 'SELECT * FROM terminal WHERE terminalname = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->getList($sqlQuery);
 	}
 
-	public function queryByVolume($value){
-		$sql = 'SELECT * FROM terminal WHERE volume = ?';
+	public function queryByDiscinfo($value){
+		$sql = 'SELECT * FROM terminal WHERE discinfo = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->setNumber($value);
 		return $this->getList($sqlQuery);
 	}
 
-	public function queryByTerminalStatus($value){
-		$sql = 'SELECT * FROM terminal WHERE terminal_status = ?';
+	public function queryByAddress($value){
+		$sql = 'SELECT * FROM terminal WHERE address = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->getList($sqlQuery);
 	}
 
-	public function queryByTerminalGroupid($value){
-		$sql = 'SELECT * FROM terminal WHERE terminal_groupid = ?';
+	public function queryByTerminaltype($value){
+		$sql = 'SELECT * FROM terminal WHERE terminaltype = ?';
+		$sqlQuery = new SqlQuery($sql);
+		$sqlQuery->set($value);
+		return $this->getList($sqlQuery);
+	}
+
+	public function queryByVersion($value){
+		$sql = 'SELECT * FROM terminal WHERE version = ?';
+		$sqlQuery = new SqlQuery($sql);
+		$sqlQuery->set($value);
+		return $this->getList($sqlQuery);
+	}
+
+
+	public function deleteByGroupid($value){
+		$sql = 'DELETE FROM terminal WHERE groupid = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->setNumber($value);
-		return $this->getList($sqlQuery);
-	}
-
-	public function queryByUsername($value){
-		$sql = 'SELECT * FROM terminal WHERE username = ?';
-		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->set($value);
-		return $this->getList($sqlQuery);
-	}
-
-
-	public function deleteByTerminalName($value){
-		$sql = 'DELETE FROM terminal WHERE terminal_name = ?';
-		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->set($value);
-		return $this->executeUpdate($sqlQuery);
-	}
-
-	public function deleteByTerminalType($value){
-		$sql = 'DELETE FROM terminal WHERE terminal_type = ?';
-		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->set($value);
 		return $this->executeUpdate($sqlQuery);
 	}
 
@@ -183,36 +167,36 @@ class TerminalMySqlDAO implements TerminalDAO{
 		return $this->executeUpdate($sqlQuery);
 	}
 
-	public function deleteByMac($value){
-		$sql = 'DELETE FROM terminal WHERE mac = ?';
+	public function deleteByTerminalname($value){
+		$sql = 'DELETE FROM terminal WHERE terminalname = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->executeUpdate($sqlQuery);
 	}
 
-	public function deleteByVolume($value){
-		$sql = 'DELETE FROM terminal WHERE volume = ?';
+	public function deleteByDiscinfo($value){
+		$sql = 'DELETE FROM terminal WHERE discinfo = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->setNumber($value);
 		return $this->executeUpdate($sqlQuery);
 	}
 
-	public function deleteByTerminalStatus($value){
-		$sql = 'DELETE FROM terminal WHERE terminal_status = ?';
+	public function deleteByAddress($value){
+		$sql = 'DELETE FROM terminal WHERE address = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->executeUpdate($sqlQuery);
 	}
 
-	public function deleteByTerminalGroupid($value){
-		$sql = 'DELETE FROM terminal WHERE terminal_groupid = ?';
+	public function deleteByTerminaltype($value){
+		$sql = 'DELETE FROM terminal WHERE terminaltype = ?';
 		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->setNumber($value);
+		$sqlQuery->set($value);
 		return $this->executeUpdate($sqlQuery);
 	}
 
-	public function deleteByUsername($value){
-		$sql = 'DELETE FROM terminal WHERE username = ?';
+	public function deleteByVersion($value){
+		$sql = 'DELETE FROM terminal WHERE version = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->executeUpdate($sqlQuery);
@@ -228,15 +212,14 @@ class TerminalMySqlDAO implements TerminalDAO{
 	protected function readRow($row){
 		$terminal = new Terminal();
 		
-		$terminal->terminalid = $row['terminalid'];
-		$terminal->terminalName = $row['terminal_name'];
-		$terminal->terminalType = $row['terminal_type'];
-		$terminal->ip = $row['ip'];
 		$terminal->mac = $row['mac'];
-		$terminal->volume = $row['volume'];
-		$terminal->terminalStatus = $row['terminal_status'];
-		$terminal->terminalGroupid = $row['terminal_groupid'];
-		$terminal->username = $row['username'];
+		$terminal->groupid = $row['groupid'];
+		$terminal->ip = $row['ip'];
+		$terminal->terminalname = $row['terminalname'];
+		$terminal->discinfo = $row['discinfo'];
+		$terminal->address = $row['address'];
+		$terminal->terminaltype = $row['terminaltype'];
+		$terminal->version = $row['version'];
 
 		return $terminal;
 	}

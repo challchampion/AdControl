@@ -1,0 +1,8 @@
+errno =  1   not login
+errno =  2   no authority
+errno =  3   already exist
+errno =  4   sql err
+errno =  5   equal to old one
+errno =  6   not exist
+errno =  7   name repeated
+errno =  8   default group can't be operated

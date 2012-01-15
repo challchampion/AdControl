@@ -3,12 +3,14 @@
 	 * Object represents table 'terminalgroup'
 	 *
      	 * @author: http://phpdao.com
-     	 * @date: 2011-12-15 02:58	 
+     	 * @date: 2011-12-29 14:21	 
 	 */
 	class Terminalgroup{
 		
-		var $terminalGroupid;
+		var $groupid;
 		var $groupname;
+		var $enterprisename;
+		var $parent;
 		
 	}
 ?>

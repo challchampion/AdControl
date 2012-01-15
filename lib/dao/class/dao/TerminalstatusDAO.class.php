@@ -5,13 +5,13 @@
  * @author: http://phpdao.com
  * @date: 2011-12-29 14:21
  */
-interface UserDAO{
+interface TerminalstatusDAO{
 
 	/**
 	 * Get Domain object by primry key
 	 *
 	 * @param String $id primary key
-	 * @Return User 
+	 * @Return Terminalstatus 
 	 */
 	public function load($id);
 
@@ -28,45 +28,37 @@ interface UserDAO{
 	
 	/**
  	 * Delete record from table
- 	 * @param user primary key
+ 	 * @param terminalstatu primary key
  	 */
-	public function delete($userid);
+	public function delete($mac);
 	
 	/**
  	 * Insert record to table
  	 *
- 	 * @param User user
+ 	 * @param Terminalstatus terminalstatu
  	 */
-	public function insert($user);
+	public function insert($terminalstatu);
 	
 	/**
  	 * Update record in table
  	 *
- 	 * @param User user
+ 	 * @param Terminalstatus terminalstatu
  	 */
-	public function update($user);	
+	public function update($terminalstatu);	
 
 	/**
 	 * Delete all rows
 	 */
 	public function clean();
 
-	public function queryByUsername($value);
+	public function queryByStatus($value);
 
-	public function queryByPasswd($value);
-
-	public function queryByEnterprisename($value);
-
-	public function queryByUserauthority($value);
+	public function queryByHbtime($value);
 
 
-	public function deleteByUsername($value);
+	public function deleteByStatus($value);
 
-	public function deleteByPasswd($value);
-
-	public function deleteByEnterprisename($value);
-
-	public function deleteByUserauthority($value);
+	public function deleteByHbtime($value);
 
 
 }

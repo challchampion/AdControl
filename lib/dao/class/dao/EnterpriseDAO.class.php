@@ -5,13 +5,13 @@
  * @author: http://phpdao.com
  * @date: 2011-12-29 14:21
  */
-interface UserDAO{
+interface EnterpriseDAO{
 
 	/**
 	 * Get Domain object by primry key
 	 *
 	 * @param String $id primary key
-	 * @Return User 
+	 * @Return Enterprise 
 	 */
 	public function load($id);
 
@@ -28,45 +28,33 @@ interface UserDAO{
 	
 	/**
  	 * Delete record from table
- 	 * @param user primary key
+ 	 * @param enterprise primary key
  	 */
-	public function delete($userid);
+	public function delete($enterprisename);
 	
 	/**
  	 * Insert record to table
  	 *
- 	 * @param User user
+ 	 * @param Enterprise enterprise
  	 */
-	public function insert($user);
+	public function insert($enterprise);
 	
 	/**
  	 * Update record in table
  	 *
- 	 * @param User user
+ 	 * @param Enterprise enterprise
  	 */
-	public function update($user);	
+	public function update($enterprise);	
 
 	/**
 	 * Delete all rows
 	 */
 	public function clean();
 
-	public function queryByUsername($value);
-
-	public function queryByPasswd($value);
-
-	public function queryByEnterprisename($value);
-
-	public function queryByUserauthority($value);
+	public function queryByLevel($value);
 
 
-	public function deleteByUsername($value);
-
-	public function deleteByPasswd($value);
-
-	public function deleteByEnterprisename($value);
-
-	public function deleteByUserauthority($value);
+	public function deleteByLevel($value);
 
 
 }

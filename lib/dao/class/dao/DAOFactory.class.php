@@ -8,94 +8,17 @@
 class DAOFactory{
 	
 	/**
-	 * @return AspectratioDAO
+	 * @return CommandDAO
 	 */
-	public static function getAspectratioDAO(){
-		return new AspectratioMySqlExtDAO();
+	public static function getCommandDAO(){
+		return new CommandMySqlExtDAO();
 	}
 
 	/**
-	 * @return DisplayportDAO
+	 * @return EnterpriseDAO
 	 */
-	public static function getDisplayportDAO(){
-		return new DisplayportMySqlExtDAO();
-	}
-
-	/**
-	 * @return MediaDAO
-	 */
-	public static function getMediaDAO(){
-		return new MediaMySqlExtDAO();
-	}
-
-	/**
-	 * @return MediacategoryDAO
-	 */
-	public static function getMediacategoryDAO(){
-		return new MediacategoryMySqlExtDAO();
-	}
-
-	/**
-	 * @return MediainfoDAO
-	 */
-	public static function getMediainfoDAO(){
-		return new MediainfoMySqlExtDAO();
-	}
-
-	/**
-	 * @return PatternDAO
-	 */
-	public static function getPatternDAO(){
-		return new PatternMySqlExtDAO();
-	}
-
-	/**
-	 * @return PatternareaDAO
-	 */
-	public static function getPatternareaDAO(){
-		return new PatternareaMySqlExtDAO();
-	}
-
-	/**
-	 * @return PlaylistDAO
-	 */
-	public static function getPlaylistDAO(){
-		return new PlaylistMySqlExtDAO();
-	}
-
-	/**
-	 * @return PlaylistitemDAO
-	 */
-	public static function getPlaylistitemDAO(){
-		return new PlaylistitemMySqlExtDAO();
-	}
-
-	/**
-	 * @return PlayscheduleDAO
-	 */
-	public static function getPlayscheduleDAO(){
-		return new PlayscheduleMySqlExtDAO();
-	}
-
-	/**
-	 * @return PlayscheduleitemDAO
-	 */
-	public static function getPlayscheduleitemDAO(){
-		return new PlayscheduleitemMySqlExtDAO();
-	}
-
-	/**
-	 * @return ResolutionDAO
-	 */
-	public static function getResolutionDAO(){
-		return new ResolutionMySqlExtDAO();
-	}
-
-	/**
-	 * @return ScheduletypeDAO
-	 */
-	public static function getScheduletypeDAO(){
-		return new ScheduletypeMySqlExtDAO();
+	public static function getEnterpriseDAO(){
+		return new EnterpriseMySqlExtDAO();
 	}
 
 	/**
@@ -113,10 +36,10 @@ class DAOFactory{
 	}
 
 	/**
-	 * @return TerminalinfoDAO
+	 * @return TerminalstatusDAO
 	 */
-	public static function getTerminalinfoDAO(){
-		return new TerminalinfoMySqlExtDAO();
+	public static function getTerminalstatusDAO(){
+		return new TerminalstatusMySqlExtDAO();
 	}
 
 	/**
@@ -127,10 +50,10 @@ class DAOFactory{
 	}
 
 	/**
-	 * @return UsergroupDAO
+	 * @return UserTgroupDAO
 	 */
-	public static function getUsergroupDAO(){
-		return new UsergroupMySqlExtDAO();
+	public static function getUserTgroupDAO(){
+		return new UserTgroupMySqlExtDAO();
 	}
 
 

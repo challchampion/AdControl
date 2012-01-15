@@ -3,19 +3,18 @@
 	 * Object represents table 'terminal'
 	 *
      	 * @author: http://phpdao.com
-     	 * @date: 2011-12-15 02:58	 
+     	 * @date: 2011-12-29 14:21	 
 	 */
 	class Terminal{
 		
-		var $terminalid;
-		var $terminalName;
-		var $terminalType;
+		var $mac;
+		var $groupid;
 		var $ip;
-		var $mac;
-		var $volume;
-		var $terminalStatus;
-		var $terminalGroupid;
-		var $username;
+		var $terminalname;
+		var $discinfo;
+		var $address;
+		var $terminaltype;
+		var $version;
 		
 	}
 ?>

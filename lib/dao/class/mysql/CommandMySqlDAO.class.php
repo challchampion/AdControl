@@ -1,20 +1,20 @@
 <?php
 /**
- * Class that operate on table 'user'. Database Mysql.
+ * Class that operate on table 'command'. Database Mysql.
  *
  * @author: http://phpdao.com
  * @date: 2011-12-29 14:21
  */
-class UserMySqlDAO implements UserDAO{
+class CommandMySqlDAO implements CommandDAO{
 
 	/**
 	 * Get Domain object by primry key
 	 *
 	 * @param String $id primary key
-	 * @return UserMySql 
+	 * @return CommandMySql 
 	 */
 	public function load($id){
-		$sql = 'SELECT * FROM user WHERE userid = ?';
+		$sql = 'SELECT * FROM command WHERE id = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->setNumber($id);
 		return $this->getRow($sqlQuery);
@@ -24,7 +24,7 @@ class UserMySqlDAO implements UserDAO{
 	 * Get all records from table
 	 */
 	public function queryAll(){
-		$sql = 'SELECT * FROM user';
+		$sql = 'SELECT * FROM command';
 		$sqlQuery = new SqlQuery($sql);
 		return $this->getList($sqlQuery);
 	}
@@ -35,56 +35,58 @@ class UserMySqlDAO implements UserDAO{
 	 * @param $orderColumn column name
 	 */
 	public function queryAllOrderBy($orderColumn){
-		$sql = 'SELECT * FROM user ORDER BY '.$orderColumn;
+		$sql = 'SELECT * FROM command ORDER BY '.$orderColumn;
 		$sqlQuery = new SqlQuery($sql);
 		return $this->getList($sqlQuery);
 	}
 	
 	/**
  	 * Delete record from table
- 	 * @param user primary key
+ 	 * @param command primary key
  	 */
-	public function delete($userid){
-		$sql = 'DELETE FROM user WHERE userid = ?';
+	public function delete($id){
+		$sql = 'DELETE FROM command WHERE id = ?';
 		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->setNumber($userid);
+		$sqlQuery->setNumber($id);
 		return $this->executeUpdate($sqlQuery);
 	}
 	
 	/**
  	 * Insert record to table
  	 *
- 	 * @param UserMySql user
+ 	 * @param CommandMySql command
  	 */
-	public function insert($user){
-		$sql = 'INSERT INTO user (username, passwd, enterprisename, userauthority) VALUES (?, ?, ?, ?)';
+	public function insert($command){
+		$sql = 'INSERT INTO command (sendtype, mac, groupid, command, commandtime) VALUES (?, ?, ?, ?, ?)';
 		$sqlQuery = new SqlQuery($sql);
 		
-		$sqlQuery->set($user->username);
-		$sqlQuery->set($user->passwd);
-		$sqlQuery->set($user->enterprisename);
-		$sqlQuery->set($user->userauthority);
+		$sqlQuery->set($command->sendtype);
+		$sqlQuery->set($command->mac);
+		$sqlQuery->setNumber($command->groupid);
+		$sqlQuery->set($command->command);
+		$sqlQuery->set($command->commandtime);
 
 		$id = $this->executeInsert($sqlQuery);	
-		$user->userid = $id;
+		$command->id = $id;
 		return $id;
 	}
 	
 	/**
  	 * Update record in table
  	 *
- 	 * @param UserMySql user
+ 	 * @param CommandMySql command
  	 */
-	public function update($user){
-		$sql = 'UPDATE user SET username = ?, passwd = ?, enterprisename = ?, userauthority = ? WHERE userid = ?';
+	public function update($command){
+		$sql = 'UPDATE command SET sendtype = ?, mac = ?, groupid = ?, command = ?, commandtime = ? WHERE id = ?';
 		$sqlQuery = new SqlQuery($sql);
 		
-		$sqlQuery->set($user->username);
-		$sqlQuery->set($user->passwd);
-		$sqlQuery->set($user->enterprisename);
-		$sqlQuery->set($user->userauthority);
+		$sqlQuery->set($command->sendtype);
+		$sqlQuery->set($command->mac);
+		$sqlQuery->setNumber($command->groupid);
+		$sqlQuery->set($command->command);
+		$sqlQuery->set($command->commandtime);
 
-		$sqlQuery->setNumber($user->userid);
+		$sqlQuery->setNumber($command->id);
 		return $this->executeUpdate($sqlQuery);
 	}
 
@@ -92,63 +94,77 @@ class UserMySqlDAO implements UserDAO{
  	 * Delete all rows
  	 */
 	public function clean(){
-		$sql = 'DELETE FROM user';
+		$sql = 'DELETE FROM command';
 		$sqlQuery = new SqlQuery($sql);
 		return $this->executeUpdate($sqlQuery);
 	}
 
-	public function queryByUsername($value){
-		$sql = 'SELECT * FROM user WHERE username = ?';
+	public function queryBySendtype($value){
+		$sql = 'SELECT * FROM command WHERE sendtype = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->getList($sqlQuery);
 	}
 
-	public function queryByPasswd($value){
-		$sql = 'SELECT * FROM user WHERE passwd = ?';
+	public function queryByMac($value){
+		$sql = 'SELECT * FROM command WHERE mac = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->getList($sqlQuery);
 	}
 
-	public function queryByEnterprisename($value){
-		$sql = 'SELECT * FROM user WHERE enterprisename = ?';
+	public function queryByGroupid($value){
+		$sql = 'SELECT * FROM command WHERE groupid = ?';
+		$sqlQuery = new SqlQuery($sql);
+		$sqlQuery->setNumber($value);
+		return $this->getList($sqlQuery);
+	}
+
+	public function queryByCommand($value){
+		$sql = 'SELECT * FROM command WHERE command = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->getList($sqlQuery);
 	}
 
-	public function queryByUserauthority($value){
-		$sql = 'SELECT * FROM user WHERE userauthority = ?';
+	public function queryByCommandtime($value){
+		$sql = 'SELECT * FROM command WHERE commandtime = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->getList($sqlQuery);
 	}
 
 
-	public function deleteByUsername($value){
-		$sql = 'DELETE FROM user WHERE username = ?';
+	public function deleteBySendtype($value){
+		$sql = 'DELETE FROM command WHERE sendtype = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->executeUpdate($sqlQuery);
 	}
 
-	public function deleteByPasswd($value){
-		$sql = 'DELETE FROM user WHERE passwd = ?';
+	public function deleteByMac($value){
+		$sql = 'DELETE FROM command WHERE mac = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->executeUpdate($sqlQuery);
 	}
 
-	public function deleteByEnterprisename($value){
-		$sql = 'DELETE FROM user WHERE enterprisename = ?';
+	public function deleteByGroupid($value){
+		$sql = 'DELETE FROM command WHERE groupid = ?';
+		$sqlQuery = new SqlQuery($sql);
+		$sqlQuery->setNumber($value);
+		return $this->executeUpdate($sqlQuery);
+	}
+
+	public function deleteByCommand($value){
+		$sql = 'DELETE FROM command WHERE command = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->executeUpdate($sqlQuery);
 	}
 
-	public function deleteByUserauthority($value){
-		$sql = 'DELETE FROM user WHERE userauthority = ?';
+	public function deleteByCommandtime($value){
+		$sql = 'DELETE FROM command WHERE commandtime = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->executeUpdate($sqlQuery);
@@ -159,18 +175,19 @@ class UserMySqlDAO implements UserDAO{
 	/**
 	 * Read row
 	 *
-	 * @return UserMySql 
+	 * @return CommandMySql 
 	 */
 	protected function readRow($row){
-		$user = new User();
+		$command = new Command();
 		
-		$user->userid = $row['userid'];
-		$user->username = $row['username'];
-		$user->passwd = $row['passwd'];
-		$user->enterprisename = $row['enterprisename'];
-		$user->userauthority = $row['userauthority'];
+		$command->id = $row['id'];
+		$command->sendtype = $row['sendtype'];
+		$command->mac = $row['mac'];
+		$command->groupid = $row['groupid'];
+		$command->command = $row['command'];
+		$command->commandtime = $row['commandtime'];
 
-		return $user;
+		return $command;
 	}
 	
 	protected function getList($sqlQuery){
@@ -185,7 +202,7 @@ class UserMySqlDAO implements UserDAO{
 	/**
 	 * Get row
 	 *
-	 * @return UserMySql 
+	 * @return CommandMySql 
 	 */
 	protected function getRow($sqlQuery){
 		$tab = QueryExecutor::execute($sqlQuery);

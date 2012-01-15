@@ -1,22 +1,22 @@
 <?php
 /**
- * Class that operate on table 'terminalgroup'. Database Mysql.
+ * Class that operate on table 'terminalstatus'. Database Mysql.
  *
  * @author: http://phpdao.com
  * @date: 2011-12-29 14:21
  */
-class TerminalgroupMySqlDAO implements TerminalgroupDAO{
+class TerminalstatusMySqlDAO implements TerminalstatusDAO{
 
 	/**
 	 * Get Domain object by primry key
 	 *
 	 * @param String $id primary key
-	 * @return TerminalgroupMySql 
+	 * @return TerminalstatusMySql 
 	 */
 	public function load($id){
-		$sql = 'SELECT * FROM terminalgroup WHERE groupid = ?';
+		$sql = 'SELECT * FROM terminalstatus WHERE mac = ?';
 		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->setNumber($id);
+		$sqlQuery->set($id);
 		return $this->getRow($sqlQuery);
 	}
 
@@ -24,7 +24,7 @@ class TerminalgroupMySqlDAO implements TerminalgroupDAO{
 	 * Get all records from table
 	 */
 	public function queryAll(){
-		$sql = 'SELECT * FROM terminalgroup';
+		$sql = 'SELECT * FROM terminalstatus';
 		$sqlQuery = new SqlQuery($sql);
 		return $this->getList($sqlQuery);
 	}
@@ -35,54 +35,52 @@ class TerminalgroupMySqlDAO implements TerminalgroupDAO{
 	 * @param $orderColumn column name
 	 */
 	public function queryAllOrderBy($orderColumn){
-		$sql = 'SELECT * FROM terminalgroup ORDER BY '.$orderColumn;
+		$sql = 'SELECT * FROM terminalstatus ORDER BY '.$orderColumn;
 		$sqlQuery = new SqlQuery($sql);
 		return $this->getList($sqlQuery);
 	}
 	
 	/**
  	 * Delete record from table
- 	 * @param terminalgroup primary key
+ 	 * @param terminalstatu primary key
  	 */
-	public function delete($groupid){
-		$sql = 'DELETE FROM terminalgroup WHERE groupid = ?';
+	public function delete($mac){
+		$sql = 'DELETE FROM terminalstatus WHERE mac = ?';
 		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->setNumber($groupid);
+		$sqlQuery->set($mac);
 		return $this->executeUpdate($sqlQuery);
 	}
 	
 	/**
  	 * Insert record to table
  	 *
- 	 * @param TerminalgroupMySql terminalgroup
+ 	 * @param TerminalstatusMySql terminalstatu
  	 */
-	public function insert($terminalgroup){
-		$sql = 'INSERT INTO terminalgroup (groupname, enterprisename, parent) VALUES (?, ?, ?)';
+	public function insert($terminalstatu){
+		$sql = 'INSERT INTO terminalstatus (status, hbtime) VALUES (?, ?)';
 		$sqlQuery = new SqlQuery($sql);
 		
-		$sqlQuery->set($terminalgroup->groupname);
-		$sqlQuery->set($terminalgroup->enterprisename);
-		$sqlQuery->setNumber($terminalgroup->parent);
+		$sqlQuery->set($terminalstatu->status);
+		$sqlQuery->set($terminalstatu->hbtime);
 
 		$id = $this->executeInsert($sqlQuery);	
-		$terminalgroup->groupid = $id;
+		$terminalstatu->mac = $id;
 		return $id;
 	}
 	
 	/**
  	 * Update record in table
  	 *
- 	 * @param TerminalgroupMySql terminalgroup
+ 	 * @param TerminalstatusMySql terminalstatu
  	 */
-	public function update($terminalgroup){
-		$sql = 'UPDATE terminalgroup SET groupname = ?, enterprisename = ?, parent = ? WHERE groupid = ?';
+	public function update($terminalstatu){
+		$sql = 'UPDATE terminalstatus SET status = ?, hbtime = ? WHERE mac = ?';
 		$sqlQuery = new SqlQuery($sql);
 		
-		$sqlQuery->set($terminalgroup->groupname);
-		$sqlQuery->set($terminalgroup->enterprisename);
-		$sqlQuery->setNumber($terminalgroup->parent);
+		$sqlQuery->set($terminalstatu->status);
+		$sqlQuery->set($terminalstatu->hbtime);
 
-		$sqlQuery->setNumber($terminalgroup->groupid);
+		$sqlQuery->set($terminalstatu->mac);
 		return $this->executeUpdate($sqlQuery);
 	}
 
@@ -90,51 +88,37 @@ class TerminalgroupMySqlDAO implements TerminalgroupDAO{
  	 * Delete all rows
  	 */
 	public function clean(){
-		$sql = 'DELETE FROM terminalgroup';
+		$sql = 'DELETE FROM terminalstatus';
 		$sqlQuery = new SqlQuery($sql);
 		return $this->executeUpdate($sqlQuery);
 	}
 
-	public function queryByGroupname($value){
-		$sql = 'SELECT * FROM terminalgroup WHERE groupname = ?';
+	public function queryByStatus($value){
+		$sql = 'SELECT * FROM terminalstatus WHERE status = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->getList($sqlQuery);
 	}
 
-	public function queryByEnterprisename($value){
-		$sql = 'SELECT * FROM terminalgroup WHERE enterprisename = ?';
+	public function queryByHbtime($value){
+		$sql = 'SELECT * FROM terminalstatus WHERE hbtime = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->getList($sqlQuery);
 	}
 
-	public function queryByParent($value){
-		$sql = 'SELECT * FROM terminalgroup WHERE parent = ?';
-		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->setNumber($value);
-		return $this->getList($sqlQuery);
-	}
 
-
-	public function deleteByGroupname($value){
-		$sql = 'DELETE FROM terminalgroup WHERE groupname = ?';
+	public function deleteByStatus($value){
+		$sql = 'DELETE FROM terminalstatus WHERE status = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->executeUpdate($sqlQuery);
 	}
 
-	public function deleteByEnterprisename($value){
-		$sql = 'DELETE FROM terminalgroup WHERE enterprisename = ?';
+	public function deleteByHbtime($value){
+		$sql = 'DELETE FROM terminalstatus WHERE hbtime = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
-		return $this->executeUpdate($sqlQuery);
-	}
-
-	public function deleteByParent($value){
-		$sql = 'DELETE FROM terminalgroup WHERE parent = ?';
-		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->setNumber($value);
 		return $this->executeUpdate($sqlQuery);
 	}
 
@@ -143,17 +127,16 @@ class TerminalgroupMySqlDAO implements TerminalgroupDAO{
 	/**
 	 * Read row
 	 *
-	 * @return TerminalgroupMySql 
+	 * @return TerminalstatusMySql 
 	 */
 	protected function readRow($row){
-		$terminalgroup = new Terminalgroup();
+		$terminalstatu = new Terminalstatu();
 		
-		$terminalgroup->groupid = $row['groupid'];
-		$terminalgroup->groupname = $row['groupname'];
-		$terminalgroup->enterprisename = $row['enterprisename'];
-		$terminalgroup->parent = $row['parent'];
+		$terminalstatu->mac = $row['mac'];
+		$terminalstatu->status = $row['status'];
+		$terminalstatu->hbtime = $row['hbtime'];
 
-		return $terminalgroup;
+		return $terminalstatu;
 	}
 	
 	protected function getList($sqlQuery){
@@ -168,7 +151,7 @@ class TerminalgroupMySqlDAO implements TerminalgroupDAO{
 	/**
 	 * Get row
 	 *
-	 * @return TerminalgroupMySql 
+	 * @return TerminalstatusMySql 
 	 */
 	protected function getRow($sqlQuery){
 		$tab = QueryExecutor::execute($sqlQuery);

@@ -101,6 +101,7 @@ function dispatch($uri = null, $req_method = null, array $params = null, $captur
             $negate = false;
             $i = 0;
         }
+      
 
         //Check for a wildcard (match all)
         if ($_route === '*' || null == $_route) {

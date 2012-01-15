@@ -1,58 +1,505 @@
-[16-Dec-2011 07:51:06] PHP Warning:  require_once(../lib/base.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 07:51:06] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../lib/base.inc.php' (include_path='.;c:\php\includes') in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 07:51:08] PHP Warning:  require_once(../lib/base.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 07:51:08] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../lib/base.inc.php' (include_path='.;c:\php\includes') in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 07:52:28] PHP Warning:  require_once(../lib/base.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 07:52:28] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../lib/base.inc.php' (include_path='.') in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 07:52:28] PHP Warning:  require_once(../lib/base.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 07:52:28] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../lib/base.inc.php' (include_path='.') in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 07:52:29] PHP Warning:  require_once(../lib/base.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 07:52:29] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../lib/base.inc.php' (include_path='.') in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 07:52:29] PHP Warning:  require_once(../lib/base.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 07:52:29] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../lib/base.inc.php' (include_path='.') in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 07:52:29] PHP Warning:  require_once(../lib/base.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 07:52:29] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../lib/base.inc.php' (include_path='.') in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 07:52:32] PHP Warning:  require_once(../lib/base.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 07:52:32] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../lib/base.inc.php' (include_path='.') in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 07:57:52] PHP Warning:  require_once(../lib/base.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 6
-[16-Dec-2011 07:57:52] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../lib/base.inc.php' (include_path='.;:') in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 6
-[16-Dec-2011 07:58:00] PHP Warning:  require_once(../lib/base.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 07:58:00] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../lib/base.inc.php' (include_path='.') in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 07:59:45] PHP Warning:  require_once(../lib/base.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 07:59:45] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../lib/base.inc.php' (include_path='.') in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 07:59:45] PHP Warning:  require_once(../lib/base.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 07:59:45] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../lib/base.inc.php' (include_path='.') in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 07:59:46] PHP Warning:  require_once(../lib/base.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 07:59:46] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../lib/base.inc.php' (include_path='.') in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 07:59:46] PHP Warning:  require_once(../lib/base.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 07:59:46] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../lib/base.inc.php' (include_path='.') in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 07:59:58] PHP Warning:  require_once(../lib/base.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 07:59:58] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../lib/base.inc.php' (include_path='.') in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 08:00:26] PHP Warning:  require_once(../lib/base.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 08:00:26] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../lib/base.inc.php' (include_path='.;D:\Program Files\workspace\Advertise') in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 08:00:27] PHP Warning:  require_once(../lib/base.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 08:00:27] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../lib/base.inc.php' (include_path='.;D:\Program Files\workspace\Advertise') in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 08:00:28] PHP Warning:  require_once(../lib/base.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 08:00:28] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../lib/base.inc.php' (include_path='.;D:\Program Files\workspace\Advertise') in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 08:00:51] PHP Warning:  require_once(../lib/base.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 08:00:51] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../lib/base.inc.php' (include_path='.;D:\Program Files\workspace\Advertise') in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 08:02:17] PHP Warning:  require_once(../lib/base.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 08:02:17] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../lib/base.inc.php' (include_path='.;D:\Program Files\workspace\Advertise') in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 08:03:04] PHP Fatal error:  Class 'UserLogic' not found in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 16
-[16-Dec-2011 08:03:53] PHP Fatal error:  Class 'UserLogic' not found in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 16
-[16-Dec-2011 08:03:54] PHP Fatal error:  Class 'UserLogic' not found in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 16
-[16-Dec-2011 08:03:54] PHP Fatal error:  Class 'UserLogic' not found in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 16
-[16-Dec-2011 08:03:54] PHP Fatal error:  Class 'UserLogic' not found in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 16
-[16-Dec-2011 08:06:44] PHP Fatal error:  Class 'UserLogic' not found in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 17
-[16-Dec-2011 08:10:39] PHP Fatal error:  Class 'UserLogic' not found in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 17
-[16-Dec-2011 10:41:49] PHP Fatal error:  Class 'UserLogic' not found in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 17
-[16-Dec-2011 10:41:50] PHP Fatal error:  Class 'UserLogic' not found in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 17
-[16-Dec-2011 10:41:50] PHP Fatal error:  Class 'UserLogic' not found in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 17
-[16-Dec-2011 10:41:50] PHP Fatal error:  Class 'UserLogic' not found in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 17
-[16-Dec-2011 10:41:50] PHP Fatal error:  Class 'UserLogic' not found in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 17
-[16-Dec-2011 10:53:16] PHP Warning:  require_once(../lib/base.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 10:53:16] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../lib/base.inc.php' (include_path='.;D:\Program Files\workspace\Advertise') in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 10:53:18] PHP Warning:  require_once(../lib/base.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 10:53:18] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../lib/base.inc.php' (include_path='.;D:\Program Files\workspace\Advertise') in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 10:53:45] PHP Warning:  require_once(../../lib/base.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
-[16-Dec-2011 10:53:45] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../../lib/base.inc.php' (include_path='.;D:\Program Files\workspace\Advertise') in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
+[19-Dec-2011 07:09:44] PHP Notice:  Undefined index: ip in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 14
+[19-Dec-2011 07:10:05] PHP Notice:  Undefined index: ip in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 14
+[19-Dec-2011 07:10:06] PHP Notice:  Undefined index: ip in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 14
+[19-Dec-2011 07:10:06] PHP Notice:  Undefined index: ip in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 14
+[19-Dec-2011 07:10:07] PHP Notice:  Undefined index: ip in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 14
+[19-Dec-2011 07:10:07] PHP Notice:  Undefined index: ip in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 14
+[19-Dec-2011 07:10:07] PHP Notice:  Undefined index: ip in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 14
+[19-Dec-2011 07:14:51] PHP Notice:  Undefined index: id in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 12
+[19-Dec-2011 07:14:51] PHP Notice:  Undefined index: ver in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 14
+[19-Dec-2011 07:15:28] PHP Fatal error:  Class 'TerminalLogic' not found in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 30
+[19-Dec-2011 07:15:51] PHP Fatal error:  Class 'TerminalLogic' not found in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 30
+[19-Dec-2011 07:15:56] PHP Fatal error:  Class 'TerminalLogic' not found in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 30
+[19-Dec-2011 07:16:58] PHP Warning:  require_once(base.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php on line 5
+[19-Dec-2011 07:16:58] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'base.inc.php' (include_path='.;D:\Program Files\workspace\Advertise') in D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php on line 5
+[19-Dec-2011 07:21:33] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Field 'terminalname' doesn't have a default value' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:51
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(57): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(292): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(72): TerminalMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(11): TerminalMySqlDAO->insert(Object(Terminal))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(40): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(40): TerminalController->onTerminalInput(Object(_Request), Object(_Respons in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 554
+[19-Dec-2011 07:23:34] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Field 'terminalname' doesn't have a default value' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:51
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(57): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(292): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(72): TerminalMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(12): TerminalMySqlDAO->insert(Object(Terminal))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(40): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(40): TerminalController->onTerminalInput(Object(_Request), Object(_Respons in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 554
+[19-Dec-2011 07:23:35] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Field 'terminalname' doesn't have a default value' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:51
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(57): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(292): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(72): TerminalMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(12): TerminalMySqlDAO->insert(Object(Terminal))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(40): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(40): TerminalController->onTerminalInput(Object(_Request), Object(_Respons in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 554
+[19-Dec-2011 07:25:53] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Field 'terminalname' doesn't have a default value' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:51
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(57): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(292): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(72): TerminalMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(13): TerminalMySqlDAO->insert(Object(Terminal))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(40): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(40): TerminalController->onTerminalInput(Object(_Request), Object(_Respons in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 554
+[19-Dec-2011 07:26:17] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Field 'terminalname' doesn't have a default value' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:51
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(57): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(292): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(72): TerminalMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(13): TerminalMySqlDAO->insert(Object(Terminal))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(40): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(40): TerminalController->onTerminalInput(Object(_Request), Object(_Respons in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 554
+[19-Dec-2011 07:33:44] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Column 'discinfo' cannot be null' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:51
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(57): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(293): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(73): TerminalMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(13): TerminalMySqlDAO->insert(Object(Terminal))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(40): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(40): TerminalController->onTerminalInput(Object(_Request), Object(_Response))
+#6 D:\Program in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 554
+[19-Dec-2011 09:19:50] PHP Notice:  Undefined index: REQUEST_URI in D:\Program Files\workspace\Advertise\index.php on line 9
+[19-Dec-2011 09:19:50] PHP Notice:  Undefined index: PATH_INFO in D:\Program Files\workspace\Advertise\index.php on line 10
+[19-Dec-2011 09:19:51] PHP Notice:  Undefined index: REQUEST_URI in D:\Program Files\workspace\Advertise\index.php on line 9
+[19-Dec-2011 09:19:51] PHP Notice:  Undefined index: PATH_INFO in D:\Program Files\workspace\Advertise\index.php on line 10
+[19-Dec-2011 09:20:03] PHP Notice:  Undefined index: REQUEST_URI in D:\Program Files\workspace\Advertise\index.php on line 9
+[19-Dec-2011 09:20:03] PHP Notice:  Undefined index: PATH_INFO in D:\Program Files\workspace\Advertise\index.php on line 10
+[19-Dec-2011 09:20:04] PHP Notice:  Undefined index: REQUEST_URI in D:\Program Files\workspace\Advertise\index.php on line 9
+[19-Dec-2011 09:20:04] PHP Notice:  Undefined index: PATH_INFO in D:\Program Files\workspace\Advertise\index.php on line 10
+[19-Dec-2011 09:20:06] PHP Notice:  Undefined index: REQUEST_URI in D:\Program Files\workspace\Advertise\index.php on line 9
+[19-Dec-2011 09:20:06] PHP Notice:  Undefined index: PATH_INFO in D:\Program Files\workspace\Advertise\index.php on line 10
+[19-Dec-2011 09:20:06] PHP Notice:  Undefined index: REQUEST_URI in D:\Program Files\workspace\Advertise\index.php on line 9
+[19-Dec-2011 09:20:06] PHP Notice:  Undefined index: PATH_INFO in D:\Program Files\workspace\Advertise\index.php on line 10
+[19-Dec-2011 09:20:53] PHP Notice:  Undefined index: PATH_INFO in D:\Program Files\workspace\Advertise\index.php on line 10
+[19-Dec-2011 09:20:53] PHP Notice:  Undefined index: PATH_INFO in D:\Program Files\workspace\Advertise\index.php on line 10
+[19-Dec-2011 09:30:41] PHP Fatal error:  Call to undefined method _Request::url() in D:\Program Files\workspace\Advertise\index.php on line 37
+[19-Dec-2011 09:30:42] PHP Fatal error:  Call to undefined method _Request::url() in D:\Program Files\workspace\Advertise\index.php on line 37
+[19-Dec-2011 11:05:17] PHP Fatal error:  Can't use method return value in write context in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 12
+[19-Dec-2011 11:05:17] PHP Fatal error:  Can't use method return value in write context in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 12
+[19-Dec-2011 11:05:17] PHP Fatal error:  Can't use method return value in write context in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 12
+[19-Dec-2011 11:06:14] PHP Fatal error:  Can't use method return value in write context in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 12
+[19-Dec-2011 11:06:14] PHP Fatal error:  Can't use method return value in write context in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 12
+[19-Dec-2011 11:06:16] PHP Fatal error:  Can't use method return value in write context in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 12
+[19-Dec-2011 11:06:16] PHP Fatal error:  Can't use method return value in write context in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 12
+[19-Dec-2011 11:06:17] PHP Fatal error:  Can't use method return value in write context in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 12
+[19-Dec-2011 11:06:17] PHP Fatal error:  Can't use method return value in write context in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 12
+[19-Dec-2011 11:06:18] PHP Fatal error:  Can't use method return value in write context in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 12
+[19-Dec-2011 11:07:18] PHP Fatal error:  Can't use method return value in write context in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 12
+[19-Dec-2011 11:07:24] PHP Fatal error:  Can't use method return value in write context in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 12
+[19-Dec-2011 11:07:24] PHP Fatal error:  Can't use method return value in write context in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 12
+[19-Dec-2011 11:07:24] PHP Fatal error:  Can't use method return value in write context in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 12
+[19-Dec-2011 11:07:25] PHP Fatal error:  Can't use method return value in write context in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 12
+[19-Dec-2011 11:07:25] PHP Fatal error:  Can't use method return value in write context in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 12
+[19-Dec-2011 11:07:25] PHP Fatal error:  Can't use method return value in write context in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 12
+[19-Dec-2011 11:07:25] PHP Fatal error:  Can't use method return value in write context in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 12
+[19-Dec-2011 11:07:25] PHP Fatal error:  Can't use method return value in write context in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 12
+[19-Dec-2011 11:08:18] PHP Fatal error:  Can't use method return value in write context in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 12
+[19-Dec-2011 11:09:19] PHP Fatal error:  Can't use method return value in write context in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 12
+[19-Dec-2011 11:10:19] PHP Fatal error:  Can't use method return value in write context in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 12
+[19-Dec-2011 11:11:19] PHP Fatal error:  Can't use method return value in write context in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 12
+[19-Dec-2011 11:12:19] PHP Fatal error:  Can't use method return value in write context in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 12
+[19-Dec-2011 11:13:19] PHP Fatal error:  Can't use method return value in write context in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 12
+[19-Dec-2011 11:14:20] PHP Fatal error:  Can't use method return value in write context in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 12
+[20-Dec-2011 03:45:49] PHP Notice:  Undefined variable: request in D:\Program Files\workspace\Advertise\index.php on line 47
+[20-Dec-2011 03:45:49] PHP Notice:  Undefined variable: response in D:\Program Files\workspace\Advertise\index.php on line 47
+[20-Dec-2011 03:45:50] PHP Fatal error:  Call to a member function render() on a non-object in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 59
+[20-Dec-2011 03:46:15] PHP Notice:  Undefined variable: request in D:\Program Files\workspace\Advertise\index.php on line 47
+[20-Dec-2011 03:46:15] PHP Notice:  Undefined variable: response in D:\Program Files\workspace\Advertise\index.php on line 47
+[20-Dec-2011 03:49:00] PHP Fatal error:  Cannot pass parameter 2 by reference in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 34
+[20-Dec-2011 03:49:40] PHP Warning:  date() [<a href='function.date'>function.date</a>]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'UTC' for '8.0/no DST' instead in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 68
+[20-Dec-2011 03:49:40] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 70
+[20-Dec-2011 03:50:15] PHP Warning:  fopen(/log/status.txt) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 65
+[20-Dec-2011 03:50:15] PHP Warning:  date() [<a href='function.date'>function.date</a>]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'UTC' for '8.0/no DST' instead in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 68
+[20-Dec-2011 03:50:15] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 70
+[20-Dec-2011 03:50:49] PHP Warning:  date() [<a href='function.date'>function.date</a>]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'UTC' for '8.0/no DST' instead in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 68
+[20-Dec-2011 03:51:52] PHP Warning:  date() [<a href='function.date'>function.date</a>]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'UTC' for '8.0/no DST' instead in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 68
+[20-Dec-2011 03:51:53] PHP Warning:  date() [<a href='function.date'>function.date</a>]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'UTC' for '8.0/no DST' instead in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 68
+[20-Dec-2011 03:51:53] PHP Warning:  date() [<a href='function.date'>function.date</a>]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'UTC' for '8.0/no DST' instead in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 68
+[20-Dec-2011 03:57:56] PHP Warning:  date() [<a href='function.date'>function.date</a>]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'UTC' for '8.0/no DST' instead in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 68
+[20-Dec-2011 03:58:29] PHP Warning:  date() [<a href='function.date'>function.date</a>]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'UTC' for '8.0/no DST' instead in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 68
+[20-Dec-2011 03:58:30] PHP Warning:  date() [<a href='function.date'>function.date</a>]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'UTC' for '8.0/no DST' instead in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 68
+[20-Dec-2011 03:58:31] PHP Warning:  date() [<a href='function.date'>function.date</a>]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'UTC' for '8.0/no DST' instead in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 68
+[20-Dec-2011 03:58:31] PHP Warning:  date() [<a href='function.date'>function.date</a>]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'UTC' for '8.0/no DST' instead in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 68
+[20-Dec-2011 04:02:29] PHP Warning:  date_default_timezone_get() [<a href='function.date-default-timezone-get'>function.date-default-timezone-get</a>]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'UTC' for '8.0/no DST' instead in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 5
+[20-Dec-2011 04:02:29] PHP Warning:  date() [<a href='function.date'>function.date</a>]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'UTC' for '8.0/no DST' instead in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 70
+[20-Dec-2011 04:02:30] PHP Warning:  date_default_timezone_get() [<a href='function.date-default-timezone-get'>function.date-default-timezone-get</a>]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'UTC' for '8.0/no DST' instead in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 5
+[20-Dec-2011 04:02:43] PHP Warning:  date_default_timezone_set() expects exactly 1 parameter, 0 given in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 5
+[20-Dec-2011 04:02:43] PHP Warning:  date() [<a href='function.date'>function.date</a>]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'UTC' for '8.0/no DST' instead in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 70
+[20-Dec-2011 04:02:43] PHP Warning:  date_default_timezone_set() expects exactly 1 parameter, 0 given in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 5
+[20-Dec-2011 12:03:43] PHP Warning:  date_default_timezone_set() expects exactly 1 parameter, 0 given in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 5
+[20-Dec-2011 12:03:43] PHP Warning:  date_default_timezone_set() expects exactly 1 parameter, 0 given in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 5
+[22-Dec-2011 17:53:26] PHP Notice:  Undefined variable: controller in D:\Program Files\workspace\Advertise\index.php on line 48
+[22-Dec-2011 17:53:26] PHP Fatal error:  Call to a member function addTerminal() on a non-object in D:\Program Files\workspace\Advertise\index.php on line 48
+[22-Dec-2011 17:54:15] PHP Fatal error:  Call to a member function addTerminal() on a non-object in D:\Program Files\workspace\Advertise\index.php on line 50
+[22-Dec-2011 17:55:03] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Field 'mac' doesn't have a default value' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:51
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(57): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(275): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(71): TerminalMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(18): TerminalMySqlDAO->insert(Object(Terminal))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(67): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(49): TerminalController->addTerminal(Object(_Request), Object(_Response))
+#6 D:\Pro in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[22-Dec-2011 17:55:41] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Field 'mac' doesn't have a default value' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:51
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(57): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(275): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(71): TerminalMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(18): TerminalMySqlDAO->insert(Object(Terminal))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(67): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(49): TerminalController->addTerminal(Object(_Request), Object(_Response))
+#6 D:\Pro in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[22-Dec-2011 17:56:19] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Field 'mac' doesn't have a default value' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:51
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(57): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(275): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(71): TerminalMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(18): TerminalMySqlDAO->insert(Object(Terminal))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(69): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(49): TerminalController->addTerminal(Object(_Request), Object(_Response))
+#6 D:\Pro in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[22-Dec-2011 17:57:40] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Field 'mac' doesn't have a default value' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:51
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(57): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(275): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(71): TerminalMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(20): TerminalMySqlDAO->insert(Object(Terminal))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(67): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(49): TerminalController->addTerminal(Object(_Request), Object(_Response))
+#6 D:\Pro in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[22-Dec-2011 17:57:41] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Field 'mac' doesn't have a default value' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:51
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(57): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(275): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(71): TerminalMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(20): TerminalMySqlDAO->insert(Object(Terminal))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(67): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(49): TerminalController->addTerminal(Object(_Request), Object(_Response))
+#6 D:\Pro in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[22-Dec-2011 17:57:41] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Field 'mac' doesn't have a default value' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:51
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(57): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(275): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(71): TerminalMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(20): TerminalMySqlDAO->insert(Object(Terminal))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(67): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(49): TerminalController->addTerminal(Object(_Request), Object(_Response))
+#6 D:\Pro in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[22-Dec-2011 17:57:51] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Field 'mac' doesn't have a default value' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:51
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(57): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(275): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(71): TerminalMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(20): TerminalMySqlDAO->insert(Object(Terminal))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(67): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(49): TerminalController->addTerminal(Object(_Request), Object(_Response))
+#6 D:\Pro in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[22-Dec-2011 18:01:18] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Field 'mac' doesn't have a default value' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:51
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(57): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalstatusMySqlDAO.class.php(190): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalstatusMySqlDAO.class.php(66): TerminalstatusMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(21): TerminalstatusMySqlDAO->insert(Object(Terminalstatus))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(67): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(49): TerminalController->addTerminal(Object(_Request) in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[22-Dec-2011 18:01:34] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Duplicate entry ''122'' for key 1' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:51
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(57): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(276): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(72): TerminalMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(20): TerminalMySqlDAO->insert(Object(Terminal))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(67): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(49): TerminalController->addTerminal(Object(_Request), Object(_Response))
+#6 D:\Program Fi in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[22-Dec-2011 18:01:58] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Field 'mac' doesn't have a default value' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:51
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(57): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalstatusMySqlDAO.class.php(190): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalstatusMySqlDAO.class.php(66): TerminalstatusMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(21): TerminalstatusMySqlDAO->insert(Object(Terminalstatus))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(67): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(49): TerminalController->addTerminal(Object(_Request) in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[22-Dec-2011 18:02:10] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Field 'mac' doesn't have a default value' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:51
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(57): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalstatusMySqlDAO.class.php(190): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalstatusMySqlDAO.class.php(66): TerminalstatusMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(21): TerminalstatusMySqlDAO->insert(Object(Terminalstatus))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(67): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(49): TerminalController->addTerminal(Object(_Request) in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[22-Dec-2011 18:04:13] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Field 'mac' doesn't have a default value' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:51
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(57): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalstatusMySqlDAO.class.php(190): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalstatusMySqlDAO.class.php(66): TerminalstatusMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(21): TerminalstatusMySqlDAO->insert(Object(Terminalstatus))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(67): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(49): TerminalController->addTerminal(Object(_Request) in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[22-Dec-2011 18:13:24] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Field 'mac' doesn't have a default value' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:51
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(57): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalstatusMySqlDAO.class.php(190): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalstatusMySqlDAO.class.php(66): TerminalstatusMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(19): TerminalstatusMySqlDAO->insert(Object(Terminalstatus))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(67): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(49): TerminalController->addTerminal(Object(_Request) in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[22-Dec-2011 18:16:54] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Field 'mac' doesn't have a default value' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:51
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(57): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalstatusMySqlDAO.class.php(190): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalstatusMySqlDAO.class.php(66): TerminalstatusMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(19): TerminalstatusMySqlDAO->insert(Object(Terminalstatus))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(67): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(49): TerminalController->addTerminal(Object(_Request) in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[22-Dec-2011 18:23:32] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Field 'mac' doesn't have a default value' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:51
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(57): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalstatusMySqlDAO.class.php(190): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalstatusMySqlDAO.class.php(66): TerminalstatusMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(19): TerminalstatusMySqlDAO->insert(Object(Terminalstatus))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(67): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(49): TerminalController->addTerminal(Object(_Request) in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[22-Dec-2011 18:25:03] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Duplicate entry ''2'' for key 1' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:51
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(57): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(275): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(72): TerminalMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(18): TerminalMySqlDAO->insert(Object(Terminal))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(67): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(49): TerminalController->addTerminal(Object(_Request), Object(_Response))
+#6 D:\Program File in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[23-Dec-2011 09:55:34] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Field 'mac' doesn't have a default value' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:52
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(58): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalstatusMySqlDAO.class.php(190): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalstatusMySqlDAO.class.php(66): TerminalstatusMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(19): TerminalstatusMySqlDAO->insert(Object(Terminalstatus))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(67): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(49): TerminalController->addTerminal(Object(_Request) in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[23-Dec-2011 09:57:28] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Field 'mac' doesn't have a default value' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:52
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(58): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalstatusMySqlDAO.class.php(190): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalstatusMySqlDAO.class.php(66): TerminalstatusMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(19): TerminalstatusMySqlDAO->insert(Object(Terminalstatus))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(67): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(49): TerminalController->addTerminal(Object(_Request) in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[23-Dec-2011 09:58:50] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Data truncated for column 'status' at row 1' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:52
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(58): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalstatusMySqlDAO.class.php(191): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalstatusMySqlDAO.class.php(67): TerminalstatusMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(19): TerminalstatusMySqlDAO->insert(Object(Terminalstatus))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(67): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(49): TerminalController->addTerminal(Object(_Reque in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[23-Dec-2011 10:03:06] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Incorrect datetime value: '' for column 'hbtime' at row 1' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:52
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(58): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalstatusMySqlDAO.class.php(191): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalstatusMySqlDAO.class.php(67): TerminalstatusMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(20): TerminalstatusMySqlDAO->insert(Object(Terminalstatus))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(67): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(49): TerminalController->addTerminal in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[23-Dec-2011 10:06:32] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Incorrect datetime value: '' for column 'hbtime' at row 1' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:52
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(58): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalstatusMySqlDAO.class.php(191): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalstatusMySqlDAO.class.php(67): TerminalstatusMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(21): TerminalstatusMySqlDAO->insert(Object(Terminalstatus))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(67): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(49): TerminalController->addTerminal in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[23-Dec-2011 10:11:30] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Duplicate entry ''wangxin'' for key 1' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:52
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(58): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(275): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(72): TerminalMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(18): TerminalMySqlDAO->insert(Object(Terminal))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(67): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(49): TerminalController->addTerminal(Object(_Request), Object(_Response))
+#6 D:\Progra in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[23-Dec-2011 10:28:31] PHP Warning:  Invalid argument supplied for foreach() in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 103
+[23-Dec-2011 10:47:40] PHP Warning:  mysql_escape_string() expects parameter 1 to be string, object given in D:\Program Files\workspace\Advertise\lib\dao\class\sql\SqlQuery.class.php on line 38
+[23-Dec-2011 10:47:40] PHP Notice:  Undefined variable: id in D:\Program Files\workspace\Advertise\lib\dao\class\mysql\ext\TerminalstatusMySqlExtDAO.class.php on line 13
+[23-Dec-2011 10:47:40] PHP Notice:  Undefined variable: mac in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 54
+[23-Dec-2011 10:47:40] PHP Notice:  Trying to get property of non-object in D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php on line 353
+[23-Dec-2011 10:47:40] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND sendtype = '0') OR (terminalgroup =  AND sendtype = '1') ORDER BY hbtime DES' at line 1' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:26
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\ext\CommandMySqlExtDAO.class.php(15): QueryExecutor::execute(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(355): CommandMySqlExtDAO->getOldestCmd(NULL, NULL)
+#2 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(54): TerminalLogic::getOldestCmdByMac(NULL)
+#3 D:\Program Files\workspace\Advertise\index.php(37): TerminalController->onTerminalInput(Object(_Request), Object(_Response))
+#4 D:\Program Files\workspace\Advertise\lib\common\klein.php(165): {closure}(Object(_Request), Obje in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[23-Dec-2011 10:57:12] PHP Warning:  mysql_escape_string() expects parameter 1 to be string, object given in D:\Program Files\workspace\Advertise\lib\dao\class\sql\SqlQuery.class.php on line 38
+[23-Dec-2011 10:57:12] PHP Notice:  Undefined variable: id in D:\Program Files\workspace\Advertise\lib\dao\class\mysql\ext\TerminalstatusMySqlExtDAO.class.php on line 13
+[23-Dec-2011 10:58:12] PHP Warning:  mysql_escape_string() expects parameter 1 to be string, object given in D:\Program Files\workspace\Advertise\lib\dao\class\sql\SqlQuery.class.php on line 38
+[23-Dec-2011 10:58:12] PHP Notice:  Undefined variable: id in D:\Program Files\workspace\Advertise\lib\dao\class\mysql\ext\TerminalstatusMySqlExtDAO.class.php on line 13
+[23-Dec-2011 10:59:12] PHP Warning:  mysql_escape_string() expects parameter 1 to be string, object given in D:\Program Files\workspace\Advertise\lib\dao\class\sql\SqlQuery.class.php on line 38
+[23-Dec-2011 10:59:12] PHP Notice:  Undefined variable: id in D:\Program Files\workspace\Advertise\lib\dao\class\mysql\ext\TerminalstatusMySqlExtDAO.class.php on line 13
+[23-Dec-2011 11:00:12] PHP Warning:  mysql_escape_string() expects parameter 1 to be string, object given in D:\Program Files\workspace\Advertise\lib\dao\class\sql\SqlQuery.class.php on line 38
+[23-Dec-2011 11:00:12] PHP Notice:  Undefined variable: id in D:\Program Files\workspace\Advertise\lib\dao\class\mysql\ext\TerminalstatusMySqlExtDAO.class.php on line 13
+[23-Dec-2011 11:01:12] PHP Warning:  mysql_escape_string() expects parameter 1 to be string, object given in D:\Program Files\workspace\Advertise\lib\dao\class\sql\SqlQuery.class.php on line 38
+[23-Dec-2011 11:01:12] PHP Notice:  Undefined variable: id in D:\Program Files\workspace\Advertise\lib\dao\class\mysql\ext\TerminalstatusMySqlExtDAO.class.php on line 13
+[23-Dec-2011 11:03:14] PHP Warning:  mysql_escape_string() expects parameter 1 to be string, object given in D:\Program Files\workspace\Advertise\lib\dao\class\sql\SqlQuery.class.php on line 38
+[23-Dec-2011 11:03:14] PHP Notice:  Undefined variable: id in D:\Program Files\workspace\Advertise\lib\dao\class\mysql\ext\TerminalstatusMySqlExtDAO.class.php on line 13
+[23-Dec-2011 11:04:31] PHP Warning:  mysql_escape_string() expects parameter 1 to be string, object given in D:\Program Files\workspace\Advertise\lib\dao\class\sql\SqlQuery.class.php on line 38
+[23-Dec-2011 11:04:31] PHP Notice:  Undefined variable: id in D:\Program Files\workspace\Advertise\lib\dao\class\mysql\ext\TerminalstatusMySqlExtDAO.class.php on line 13
+[23-Dec-2011 11:05:04] PHP Warning:  mysql_escape_string() expects parameter 1 to be string, object given in D:\Program Files\workspace\Advertise\lib\dao\class\sql\SqlQuery.class.php on line 38
+[23-Dec-2011 11:05:04] PHP Notice:  Undefined variable: id in D:\Program Files\workspace\Advertise\lib\dao\class\mysql\ext\TerminalstatusMySqlExtDAO.class.php on line 13
+[23-Dec-2011 11:05:55] PHP Warning:  mysql_escape_string() expects parameter 1 to be string, object given in D:\Program Files\workspace\Advertise\lib\dao\class\sql\SqlQuery.class.php on line 38
+[23-Dec-2011 11:05:55] PHP Warning:  mysql_escape_string() expects parameter 1 to be string, object given in D:\Program Files\workspace\Advertise\lib\dao\class\sql\SqlQuery.class.php on line 38
+[23-Dec-2011 11:07:15] PHP Warning:  mysql_escape_string() expects parameter 1 to be string, object given in D:\Program Files\workspace\Advertise\lib\dao\class\sql\SqlQuery.class.php on line 38
+[23-Dec-2011 11:07:15] PHP Warning:  mysql_escape_string() expects parameter 1 to be string, object given in D:\Program Files\workspace\Advertise\lib\dao\class\sql\SqlQuery.class.php on line 38
+[23-Dec-2011 11:08:53] PHP Warning:  mysql_escape_string() expects parameter 1 to be string, object given in D:\Program Files\workspace\Advertise\lib\dao\class\sql\SqlQuery.class.php on line 38
+[23-Dec-2011 11:08:53] PHP Warning:  mysql_escape_string() expects parameter 1 to be string, object given in D:\Program Files\workspace\Advertise\lib\dao\class\sql\SqlQuery.class.php on line 38
+[23-Dec-2011 11:09:21] PHP Warning:  mysql_escape_string() expects parameter 1 to be string, object given in D:\Program Files\workspace\Advertise\lib\dao\class\sql\SqlQuery.class.php on line 38
+[23-Dec-2011 11:09:21] PHP Warning:  mysql_escape_string() expects parameter 1 to be string, object given in D:\Program Files\workspace\Advertise\lib\dao\class\sql\SqlQuery.class.php on line 38
+[23-Dec-2011 11:51:02] PHP Notice:  Undefined variable: mac in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 57
+[23-Dec-2011 11:51:02] PHP Notice:  Trying to get property of non-object in D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php on line 354
+[23-Dec-2011 11:51:02] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND sendtype = '0') OR (terminalgroup =  AND sendtype = '1') ORDER BY hbtime DES' at line 1' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:26
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\ext\CommandMySqlExtDAO.class.php(15): QueryExecutor::execute(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(356): CommandMySqlExtDAO->getOldestCmd(NULL, NULL)
+#2 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(57): TerminalLogic::getOldestCmdByMac(NULL)
+#3 D:\Program Files\workspace\Advertise\index.php(37): TerminalController->onTerminalInput(Object(_Request), Object(_Response))
+#4 D:\Program Files\workspace\Advertise\lib\common\klein.php(165): {closure}(Object(_Request), Obje in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[23-Dec-2011 12:00:49] PHP Notice:  Trying to get property of non-object in D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php on line 354
+[23-Dec-2011 12:00:49] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Illegal double '0016E865' value found during parsing' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:26
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\ext\CommandMySqlExtDAO.class.php(15): QueryExecutor::execute(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(356): CommandMySqlExtDAO->getOldestCmd('0016E865FC35', NULL)
+#2 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(57): TerminalLogic::getOldestCmdByMac('0016E865FC35')
+#3 D:\Program Files\workspace\Advertise\index.php(37): TerminalController->onTerminalInput(Object(_Request), Object(_Response))
+#4 D:\Program Files\workspace\Advertise\lib\common\klein.php(165): {closure}(Object(_Request), Object(_Response), Object(stdClass), 0)
+#5 D:\Program Files\workspace\Advertise\index.php(89): dispatch()
+#6 {main}' in D:\Program Files\workspace\Advertise\l in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[23-Dec-2011 12:10:03] PHP Notice:  Undefined variable: mac in D:\Program Files\workspace\Advertise\control\TerminalController.class.php on line 57
+[23-Dec-2011 12:10:03] PHP Notice:  Trying to get property of non-object in D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php on line 357
+[23-Dec-2011 12:10:03] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND sendtype = '0') OR (terminalgroup =  AND sendtype = '1') ORDER BY hbtime DES' at line 1' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:26
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\ext\CommandMySqlExtDAO.class.php(15): QueryExecutor::execute(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(359): CommandMySqlExtDAO->getOldestCmd(NULL, NULL)
+#2 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(57): TerminalLogic::getOldestCmdByMac(NULL)
+#3 D:\Program Files\workspace\Advertise\index.php(37): TerminalController->onTerminalInput(Object(_Request), Object(_Response))
+#4 D:\Program Files\workspace\Advertise\lib\common\klein.php(165): {closure}(Object(_Request), Obje in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[23-Dec-2011 12:10:26] PHP Notice:  Trying to get property of non-object in D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php on line 357
+[23-Dec-2011 12:10:26] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Illegal double '0016E865' value found during parsing' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:26
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\ext\CommandMySqlExtDAO.class.php(15): QueryExecutor::execute(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(359): CommandMySqlExtDAO->getOldestCmd('0016E865FC35', NULL)
+#2 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(57): TerminalLogic::getOldestCmdByMac('0016E865FC35')
+#3 D:\Program Files\workspace\Advertise\index.php(37): TerminalController->onTerminalInput(Object(_Request), Object(_Response))
+#4 D:\Program Files\workspace\Advertise\lib\common\klein.php(165): {closure}(Object(_Request), Object(_Response), Object(stdClass), 0)
+#5 D:\Program Files\workspace\Advertise\index.php(89): dispatch()
+#6 {main}' in D:\Program Files\workspace\Advertise\l in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[23-Dec-2011 12:19:32] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Duplicate entry '0016E865FC35' for key 1' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:51
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(57): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(275): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(72): TerminalMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(18): TerminalMySqlDAO->insert(Object(Terminal))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(71): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(49): TerminalController->addTerminal(Object(_Request), Object(_Response))
+#6 D:\Pro in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[23-Dec-2011 12:19:50] PHP Fatal error:  Class 'Terminalstatu' not found in D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalstatusMySqlDAO.class.php on line 134
+[23-Dec-2011 12:20:45] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Illegal double '0016E865' value found during parsing' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:26
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\ext\CommandMySqlExtDAO.class.php(15): QueryExecutor::execute(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(361): CommandMySqlExtDAO->getOldestCmd('0016E865FC35', '')
+#2 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(57): TerminalLogic::getOldestCmdByMac('0016E865FC35')
+#3 D:\Program Files\workspace\Advertise\index.php(37): TerminalController->onTerminalInput(Object(_Request), Object(_Response))
+#4 D:\Program Files\workspace\Advertise\lib\common\klein.php(165): {closure}(Object(_Request), Object(_Response), Object(stdClass), 0)
+#5 D:\Program Files\workspace\Advertise\index.php(89): dispatch()
+#6 {main}' in D:\Program Files\workspace\Advertise\lib in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[23-Dec-2011 12:28:45] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Illegal double '0016E865' value found during parsing' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:26
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\ext\CommandMySqlExtDAO.class.php(15): QueryExecutor::execute(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(361): CommandMySqlExtDAO->getOldestCmd('0016E865FC35', '')
+#2 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(57): TerminalLogic::getOldestCmdByMac('0016E865FC35')
+#3 D:\Program Files\workspace\Advertise\index.php(37): TerminalController->onTerminalInput(Object(_Request), Object(_Response))
+#4 D:\Program Files\workspace\Advertise\lib\common\klein.php(165): {closure}(Object(_Request), Object(_Response), Object(stdClass), 0)
+#5 D:\Program Files\workspace\Advertise\index.php(89): dispatch()
+#6 {main}' in D:\Program Files\workspace\Advertise\lib in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[23-Dec-2011 12:28:48] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Illegal double '0016E865' value found during parsing' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:26
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\ext\CommandMySqlExtDAO.class.php(15): QueryExecutor::execute(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(361): CommandMySqlExtDAO->getOldestCmd('0016E865FC35', '')
+#2 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(57): TerminalLogic::getOldestCmdByMac('0016E865FC35')
+#3 D:\Program Files\workspace\Advertise\index.php(37): TerminalController->onTerminalInput(Object(_Request), Object(_Response))
+#4 D:\Program Files\workspace\Advertise\lib\common\klein.php(165): {closure}(Object(_Request), Object(_Response), Object(stdClass), 0)
+#5 D:\Program Files\workspace\Advertise\index.php(89): dispatch()
+#6 {main}' in D:\Program Files\workspace\Advertise\lib in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[23-Dec-2011 12:33:33] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Unknown column 'hbtime' in 'order clause'' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:26
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\ext\CommandMySqlExtDAO.class.php(17): QueryExecutor::execute(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(361): CommandMySqlExtDAO->getOldestCmd('0016E865FC35', '')
+#2 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(57): TerminalLogic::getOldestCmdByMac('0016E865FC35')
+#3 D:\Program Files\workspace\Advertise\index.php(37): TerminalController->onTerminalInput(Object(_Request), Object(_Response))
+#4 D:\Program Files\workspace\Advertise\lib\common\klein.php(165): {closure}(Object(_Request), Object(_Response), Object(stdClass), 0)
+#5 D:\Program Files\workspace\Advertise\index.php(89): dispatch()
+#6 {main}' in D:\Program Files\workspace\Advertise\lib\common\kle in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[23-Dec-2011 13:26:52] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Duplicate entry '0016E865FC35' for key 1' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:51
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(57): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(275): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(72): TerminalMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(18): TerminalMySqlDAO->insert(Object(Terminal))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(71): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(49): TerminalController->addTerminal(Object(_Request), Object(_Response))
+#6 D:\Pro in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[23-Dec-2011 13:26:53] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Unknown column 'hbtime' in 'order clause'' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:26
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\ext\CommandMySqlExtDAO.class.php(17): QueryExecutor::execute(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(361): CommandMySqlExtDAO->getOldestCmd('0016E865FC35', '')
+#2 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(57): TerminalLogic::getOldestCmdByMac('0016E865FC35')
+#3 D:\Program Files\workspace\Advertise\index.php(37): TerminalController->onTerminalInput(Object(_Request), Object(_Response))
+#4 D:\Program Files\workspace\Advertise\lib\common\klein.php(165): {closure}(Object(_Request), Object(_Response), Object(stdClass), 0)
+#5 D:\Program Files\workspace\Advertise\index.php(89): dispatch()
+#6 {main}' in D:\Program Files\workspace\Advertise\lib\common\kle in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[23-Dec-2011 13:27:06] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Duplicate entry '0016E865FC35' for key 1' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:51
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(57): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(275): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\TerminalMySqlDAO.class.php(72): TerminalMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(18): TerminalMySqlDAO->insert(Object(Terminal))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(71): TerminalLogic::addTerminal(Object(Terminal))
+#5 D:\Program Files\workspace\Advertise\index.php(49): TerminalController->addTerminal(Object(_Request), Object(_Response))
+#6 D:\Pro in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[23-Dec-2011 13:27:41] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Unknown column 'hbtime' in 'order clause'' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:26
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\ext\CommandMySqlExtDAO.class.php(17): QueryExecutor::execute(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(361): CommandMySqlExtDAO->getOldestCmd('0016E865FC35', '')
+#2 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(57): TerminalLogic::getOldestCmdByMac('0016E865FC35')
+#3 D:\Program Files\workspace\Advertise\index.php(37): TerminalController->onTerminalInput(Object(_Request), Object(_Response))
+#4 D:\Program Files\workspace\Advertise\lib\common\klein.php(165): {closure}(Object(_Request), Object(_Response), Object(stdClass), 0)
+#5 D:\Program Files\workspace\Advertise\index.php(89): dispatch()
+#6 {main}' in D:\Program Files\workspace\Advertise\lib\common\kle in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[23-Dec-2011 13:56:20] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'exception 'Exception' with message 'Incorrect datetime value: '' for column 'commandtime' at row 1' in D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php:51
+Stack trace:
+#0 D:\Program Files\workspace\Advertise\lib\dao\class\sql\QueryExecutor.class.php(57): QueryExecutor::executeUpdate(Object(SqlQuery))
+#1 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\CommandMySqlDAO.class.php(241): QueryExecutor::executeInsert(Object(SqlQuery))
+#2 D:\Program Files\workspace\Advertise\lib\dao\class\mysql\CommandMySqlDAO.class.php(69): CommandMySqlDAO->executeInsert(Object(SqlQuery))
+#3 D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php(139): CommandMySqlDAO->insert(Object(Command))
+#4 D:\Program Files\workspace\Advertise\control\TerminalController.class.php(131): TerminalLogic::noParamCmdOnTerminalOrGroup('poweroff', Array, NULL)
+#5 D:\Program Files\workspace\Advertise\index.php(64): TerminalController->poweroffTerminal in D:\Program Files\workspace\Advertise\lib\common\klein.php on line 555
+[23-Dec-2011 15:16:19] PHP Notice:  Undefined index: id in D:\Program Files\workspace\Advertise\lib\dao\class\mysql\ext\CommandMySqlExtDAO.class.php on line 21
+[14-Feb-2011 00:12:14] PHP Fatal error:  Call to undefined method TerminalMySqlExtDAO::queryByMac() in D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php on line 369
+[14-Feb-2011 01:24:15] PHP Warning:  require_once(base.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\lib\logic\UserLogic.class.php on line 5
+[14-Feb-2011 01:24:15] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'base.inc.php' (include_path='.;D:\Program Files\workspace\Advertise') in D:\Program Files\workspace\Advertise\lib\logic\UserLogic.class.php on line 5
+[14-Feb-2011 01:24:16] PHP Warning:  require_once(base.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\lib\logic\UserLogic.class.php on line 5
+[14-Feb-2011 01:24:16] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'base.inc.php' (include_path='.;D:\Program Files\workspace\Advertise') in D:\Program Files\workspace\Advertise\lib\logic\UserLogic.class.php on line 5
+[14-Feb-2011 01:24:33] PHP Warning:  require_once(base.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
+[14-Feb-2011 01:24:33] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'base.inc.php' (include_path='.;D:\Program Files\workspace\Advertise') in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
+[14-Feb-2011 01:24:33] PHP Warning:  require_once(base.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
+[14-Feb-2011 01:24:33] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'base.inc.php' (include_path='.;D:\Program Files\workspace\Advertise') in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 5
+[14-Feb-2011 01:25:03] PHP Notice:  Undefined variable: request in D:\Program Files\workspace\Advertise\index.php on line 20
+[14-Feb-2011 01:25:03] PHP Notice:  Undefined variable: response in D:\Program Files\workspace\Advertise\index.php on line 20
+[14-Feb-2011 01:25:03] PHP Fatal error:  Call to a member function json() on a non-object in D:\Program Files\workspace\Advertise\control\UserController.class.php on line 52
+[14-Feb-2011 02:01:55] PHP Fatal error:  Call to undefined method TerminalMySqlExtDAO::queryByMac() in D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php on line 369
+[14-Feb-2011 02:01:59] PHP Fatal error:  Call to undefined method TerminalMySqlExtDAO::queryByMac() in D:\Program Files\workspace\Advertise\lib\logic\TerminalLogic.class.php on line 369
+[04-Jan-2012 18:09:00] PHP Warning:  require_once(logic/UserAuth.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\lib\base.inc.php on line 9
+[04-Jan-2012 18:09:00] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'logic/UserAuth.php' (include_path='.;D:\Program Files\workspace\Advertise') in D:\Program Files\workspace\Advertise\lib\base.inc.php on line 9
+[04-Jan-2012 18:09:00] PHP Warning:  require_once(logic/UserAuth.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in D:\Program Files\workspace\Advertise\lib\base.inc.php on line 9
+[04-Jan-2012 18:09:00] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'logic/UserAuth.php' (include_path='.;D:\Program Files\workspace\Advertise') in D:\Program Files\workspace\Advertise\lib\base.inc.php on line 9

@@ -1,0 +1,10 @@
+controller   action  datain  dataout
+
+TerminalController   updateTerminalInfo  {'mac', 'terminalname', 'address'}   {array('success'=> true or false,  'msg'=>'')}
+
+TerminalController   deleteTerminals      {'macs[]'}  {array('success'=> true or false,  'msg'=>'')}
+TerminalController   shutdownTerminals    {'macs[]'}  {array('success'=> true or false,  'msg'=>'')}
+TerminalController   rebootTerminals      {'macs[]'}  {array('success'=> true or false,  'msg'=>'')}
+TerminalController   dormantTerminals     {'macs[]'}  {array('success'=> true or false,  'msg'=>'')}
+
+TerminalController   timeonoff            {'macs[]', 'poweron', 'poweroff'}  {array('success'=> true or false,  'msg'=>'')}
