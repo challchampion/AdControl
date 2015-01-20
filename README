@@ -1,8 +1,10 @@
-lib/common            ���Թ�����һЩ�⣬Ʃ�����ݿ�����
-lib/dao               ���ݷ��ʶ����࣬����Ӧ��dao��������
-lib/logic             ҵ���߼���
-lib/base.inc.php      ȫ�ֱ���
-lib/config.inc.php    ����
+lib/common            可以共享的一些库，譬如数据库抽象层
+lib/dao               数据访问对象类，及对应的dao工厂函数
+lib/logic             业务逻辑类
+lib/base.inc.php      全局变量
+lib/config.inc.php    配置
 
-/control              ҳ���߼�����Ҫ���������ṩ·��ӳ���
+/control              页面逻辑，需要在配置里提供路由映射表
+
+pr test
 
